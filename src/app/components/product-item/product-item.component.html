@@ -1,1 +1,21 @@
-<p>product-item works!</p>
+<div class="product-item" (click)="handleClickProduct(product)">
+    <div class="product-image">
+      <img
+      [src]="product ? product.imageUrl[0] : ''"
+      height="350px" width="360px"
+      [alt]="product?.name">
+    </div>
+    
+    <div class="product-details">
+      <div class="product-name">
+        <h3>{{product?.name}}</h3>
+        <p>{{product?.description}} </p>
+      </div>
+      <div class="product-price">
+        <h4>{{(product?.sold_price || 0 )/100 }} $ </h4>
+        <del>
+          <h4>{{(product?.regular_price || 0 )/100}} $ </h4>
+        </del>
+      </div>
+    </div> 
+</div>

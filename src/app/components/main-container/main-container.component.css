@@ -1,0 +1,66 @@
+.section{
+    min-height:75vh;
+    width: 100%;
+    padding:0px 0;
+    backdrop-filter: blur(5px);
+    padding-bottom: 50px;
+  }
+  .banner img{
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+  }
+  .section .bio{
+    font-size: 17px;
+    padding: 20px;
+    margin: 80px 145px;
+    text-align: center;
+    background-color: whitesmoke;
+  
+    border: 2px solid whitesmoke;
+  
+  }
+  .section .bio img{
+    width: 270px;
+  }
+  @media (max-width: 680px)
+  {
+    .banner img{
+      height: 120px;
+    }
+    .section .bio{
+      margin: 40px 20px;
+      font-size: 14px;
+    }
+    .section .bio img{
+      width: 190px;
+    }
+  }
+  @media (max-width: 430px)
+  {
+    .banner img{
+      height: 110px;
+    }
+    .section .bio{
+      font-size: 13px;
+    }
+    .section .bio img{
+      width: 160px;
+    }
+  }
+  @media (max-width: 330px)
+  {
+    .banner img{
+      height: 90px;
+    }
+  }
+  @media (max-width: 330px)
+  {
+    .banner img{
+      height: 70px;
+    }
+     .section .bio{
+      font-size: 11px;
+    }
+  }
+  

@@ -1,0 +1,103 @@
+header{
+    background-color: white;
+    height: 120px;
+    color: #151217 ;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px 20px;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+  header .nav-bar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #151217;
+    margin-right: 130px;
+  
+  }
+  header a{
+    text-decoration: none;
+    color: #151217;
+  }
+  header a:hover {
+    border-bottom: 1px solid #DA001E;
+    text-decoration: none;
+    color: #DA001E;
+  }
+  .logo img{
+    width: 170px;
+    height: 100%;
+    margin-left: 80px;
+  }
+  @media (max-width: 680px){
+    header{
+      font-size: 14px;
+      padding: 5px 10px;
+      justify-content: space-between;
+    }
+    header .nav-bar ul{
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .logo img{
+     margin-left: 10px;
+  
+    }
+  }
+  @media (max-width: 390px){
+    header{
+      font-size: 13px;
+      padding: 5px 5px;
+      justify-content: space-between;
+    }
+    header .nav-bar ul{
+      margin-right: 5px;
+      font-size: 13px;
+    }
+    .logo img{
+     margin-left: 10px;
+     width: 120px;
+     height: 100%;
+    }
+  }
+  @media (max-width: 320px){
+    header{
+      font-size: 11px;
+      padding: 5px 5px;
+      justify-content: space-between;
+    }
+    header .nav-bar ul{
+      margin-right: 5px;
+      font-size: 11px;
+    }
+    .logo img{
+     margin-left: 10px;
+     width: 120px;
+     height: 100%;
+    }
+  }
+  @media (max-width: 290px){
+    header{
+      font-size: 9px;
+      padding: 5px 5px;
+      justify-content: space-between;
+    }
+    header .nav-bar ul{
+      margin-right: 5px;
+      font-size: 9px;
+    }
+    .logo img{
+     margin-left: 10px;
+     width: 100px;
+     height: 100%;
+    }
+  }
+  

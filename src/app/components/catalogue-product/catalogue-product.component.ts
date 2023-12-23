@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
+import { CommonModule } from '@angular/common';
+import { ProductItemComponent } from "../product-item/product-item.component";
+import { ProductService } from './../../services/product.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-catalogue-product',
@@ -7,9 +12,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogueProductComponent implements OnInit {
 
-  constructor() { }
+  products: Product[] = []
+  
+  productSub: Subscription | undefined
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.productService.getProducts()
+      .then((products: Product[])=>{
+      this.products = products
+      })
+      .catch(()=>{
+      this.products = []
+    })
   }
-
+  getNumber(): number{
+    return 3
+  }
 }
