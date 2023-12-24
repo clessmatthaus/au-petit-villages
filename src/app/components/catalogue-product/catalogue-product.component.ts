@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { CommonModule } from '@angular/common';
 import { ProductItemComponent } from "../product-item/product-item.component";
@@ -10,25 +10,32 @@ import { Subscription } from 'rxjs';
   templateUrl: './catalogue-product.component.html',
   styleUrls: ['./catalogue-product.component.css']
 })
-export class CatalogueProductComponent implements OnInit {
+export class CatalogueProductComponent implements OnInit, OnDestroy {
 
   products: Product[] = []
 
   isDisplayModal: boolean = false
   modalProduct: Product | undefined
-  
   productSub: Subscription | undefined
-
+  
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
-    this.productService.getProducts()
-      .then((products: Product[])=>{
-      this.products = products
-      })
-      .catch(()=>{
-      this.products = []
+    this.productSub = this.productService.getProducts().subscribe({
+      next: (products: Product[])=>{
+        this.products = products
+      },
+      error: (error: any)=>{
+        console.log("Erreur : ", error);
+      },
+      complete: ()=>{
+        console.log("chargement de données terminée");
+      },
     })
+     
+  }
+  ngOnDestroy(): void {
+      this.productSub?.unsubscribe()
   }
   getNumber(): number{
     return 3

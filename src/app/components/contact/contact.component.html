@@ -4,11 +4,11 @@
             <div class="card-form">
                 <h1>Contactez-nous</h1>
                 <form>
-                    <input type="name" placeholder="Votre nom" required/>
-                    <input type="email" placeholder="Votre email" required/>
-                    <input type="text" placeholder="Sujet" required/>
-                    <textarea placeholder="Votre message" required></textarea>
-                    <div class="send-btn">Envoyer</div>
+                    <input type="name" name="name" placeholder="Votre nom..." [(ngModel)]="name"/>
+                    <input type="email" name="email" placeholder="email..." [(ngModel)]="email"/>
+                    <input type="text" placeholder="Sujet" name="Sujet..." [(ngModel)]="subject"/>
+                    <textarea placeholder="Votre message" name="message..." [(ngModel)]="message"></textarea>
+                    <button type="submit" (click)="handleSubmit()" class="send-btn">Envoyer</button>
                 </form>
             </div>
         </div>

@@ -1,4 +1,8 @@
-import { Component,  OnInit } from '@angular/core';
+import { Component,  OnDestroy,  OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
+import { Product } from 'src/app/models/product';
+import { ProductService } from 'src/app/services/product.service';
 
 
 @Component({
@@ -6,12 +10,26 @@ import { Component,  OnInit } from '@angular/core';
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
+export class ProductComponent implements OnInit, OnDestroy {
 
-
-  constructor() { }
+  product: Product | undefined
+  productSub: Subscription | undefined
+  slug: string | undefined
+  
+  constructor(private route: ActivatedRoute, private productService: ProductService) { }
 
   ngOnInit(): void {
+
+    this.slug = this.route.snapshot.params["slug"]
+    /*this.productSub = this.productService.getProducts().subscribe({
+      next: (products: Product[])=>{
+        const product = products.filter(i => i.slug === this.slug)
+      }
+    })*/
+    
+  }
+  ngOnDestroy(): void {
+      this.productSub?.unsubscribe()
   }
   
 }

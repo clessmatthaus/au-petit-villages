@@ -20,11 +20,11 @@ background-size: cover;
     padding: 20px;
 }
 .card-form h1{
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .card-form{
     width: 650px;
-    height:530px;
+    height:480px;
     margin-left: 45%;  
     display: flex;
     flex-direction: column ;
@@ -53,8 +53,8 @@ background-size: cover;
     background-color: white;
 }
 .send-btn{
-    width: 20%;
-    padding: 10px 30px;
+    width: 160px;
+    padding: 10px 40px;
     border:1px solid rgb(150, 147, 147);
     background-color: rgb(80, 79, 79);
     color: white;

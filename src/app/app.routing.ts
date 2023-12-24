@@ -23,7 +23,7 @@ export const ROUTES: Routes = [
       pathMatch: 'full'
     },
     {
-      path: "produit",
+      path: "produit/:slug",
       component: ProductComponent,
       pathMatch: 'full'
     }

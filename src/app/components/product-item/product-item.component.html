@@ -1,3 +1,4 @@
+<a [routerLink]="['product', product?.slug]">
 <div class="product-item" (click)="handleClickProduct(product)">
     <div class="product-image">
       <img
@@ -17,5 +18,10 @@
           <h4>{{(product?.regular_price || 0 )/100}} $ </h4>
         </del>
       </div>
+      <div class="infos-details">
+        <button id="apercu">Aperçu</button>
+        <button id="details">Voir en details</button>
+      </div>
     </div> 
 </div>
+</a>
