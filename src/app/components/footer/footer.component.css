@@ -1,6 +1,7 @@
 .footer{
     padding: 10px 0;
     background-color:  #151217;
+    position: sticky;
   }
   .footer-content{
     height: calc(100% - 75vh - 120px);
