@@ -10,6 +10,7 @@ export class ProductItemComponent implements OnInit {
   @Input() product: Product | undefined
   @Output() displayProductPage: EventEmitter<Product> = new EventEmitter<Product>()
   
+  @Output() displayProductModal: EventEmitter<Product> = new EventEmitter<Product>()
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +19,7 @@ export class ProductItemComponent implements OnInit {
     return 3
   }
   handleClickProduct(product: Product | undefined){
-    this.displayProductPage.emit(product)
+    this.displayProductModal.emit(product)
   }
 
 }

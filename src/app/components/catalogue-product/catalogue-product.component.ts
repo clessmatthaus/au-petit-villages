@@ -13,6 +13,9 @@ import { Subscription } from 'rxjs';
 export class CatalogueProductComponent implements OnInit {
 
   products: Product[] = []
+
+  isDisplayModal: boolean = false
+  modalProduct: Product | undefined
   
   productSub: Subscription | undefined
 
@@ -29,5 +32,15 @@ export class CatalogueProductComponent implements OnInit {
   }
   getNumber(): number{
     return 3
+  }
+  handleDisplayProductModal(product: Product){
+    if(product){
+      this.isDisplayModal= true
+      this.modalProduct = product
+    }
+  }
+  handleCloseModal(){
+    this.isDisplayModal= false
+      this.modalProduct = undefined
   }
 }

@@ -1,0 +1,25 @@
+
+<div class="product-modal">
+    <div class="overlay"></div>
+    
+    <div class="product-modal-container">
+        <div class="modal-img">
+            <img 
+            [src]=" product ? product.imageUrl[0] : '' "
+            [alt]="product?.name">
+        </div>       
+        <div class="modal-details"> 
+            <div class="close">
+                <img src="./assets/images/products/croix.png" width="32px"
+                (click)="closeModal()">
+            </div>          
+            <h2>{{product?.name}}</h2>
+            <p>{{product?.description}}</p>
+            <div class="modal-price-details">
+                <h4>{{(product?.sold_price || 0)/100}} $</h4>
+                <del><h4>{{(product?.regular_price || 0)/100}} $</h4></del>
+            </div>
+        </div>
+        
+    </div>
+</div>

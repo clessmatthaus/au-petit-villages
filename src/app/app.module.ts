@@ -14,6 +14,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 import { RouterModule } from '@angular/router';
 import {ROUTES} from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductModalComponent } from './components/product-modal/product-modal.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     MainContainerComponent,
     ProductComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    ProductModalComponent
   ],
   imports: [
     BrowserModule,

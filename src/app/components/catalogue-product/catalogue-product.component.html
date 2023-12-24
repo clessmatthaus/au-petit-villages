@@ -1,4 +1,10 @@
 <div class="product-list">
-    <app-product-item *ngFor="let product of products" [product]="product">
+    <app-product-item *ngFor="let product of products" [product]="product"
+    (displayProductModal)="handleDisplayProductModal($event)">
     </app-product-item>
+   <app-product-modal 
+   *ngIf="isDisplayModal && modalProduct"
+   [product]="modalProduct"
+   (close)="handleCloseModal()">
+   </app-product-modal> 
 </div>

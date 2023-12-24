@@ -45,8 +45,12 @@
     .product-item img{
       width: 330px;
      }
-  
+    .product-name p {
+    padding: 5px;
+    font-size: 11px;
+    }
   }
+  
   @media (max-width: 350px){
     .product-item{
      width: 290px;
@@ -54,6 +58,10 @@
     .product-item img{
       width: 290px;
      }
+     .product-name p {
+      padding: 5px;
+      font-size: 11px;
+      }
   
   }
   @media (max-width: 295px){
@@ -63,7 +71,10 @@
     .product-item img{
       width: 260px;
      }
-  
+     .product-name p {
+      padding: 5px;
+      font-size: 11px;
+      }
   }
   
   

@@ -52,6 +52,22 @@ header{
   
     }
   }
+  @media (max-width: 415px){
+    header{
+      font-size: 13px;
+      padding: 5px 5px;
+      justify-content: space-between;
+    }
+    header .nav-bar ul{
+      margin-right: 5px;
+      font-size: 12px;
+    }
+    .logo img{
+     margin-left: 10px;
+     width: 120px;
+     height: 100%;
+    }
+  }
   @media (max-width: 390px){
     header{
       font-size: 13px;
@@ -68,31 +84,31 @@ header{
      height: 100%;
     }
   }
-  @media (max-width: 320px){
+  @media (max-width: 340px){
     header{
-      font-size: 11px;
+      font-size: 10px;
       padding: 5px 5px;
       justify-content: space-between;
     }
     header .nav-bar ul{
       margin-right: 5px;
-      font-size: 11px;
+      font-size: 10px;
     }
     .logo img{
      margin-left: 10px;
-     width: 120px;
+     width: 110px;
      height: 100%;
     }
   }
   @media (max-width: 290px){
     header{
-      font-size: 9px;
+      font-size: 8px;
       padding: 5px 5px;
       justify-content: space-between;
     }
     header .nav-bar ul{
       margin-right: 5px;
-      font-size: 9px;
+      font-size: 8px;
     }
     .logo img{
      margin-left: 10px;
