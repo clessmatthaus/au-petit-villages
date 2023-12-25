@@ -1,0 +1,30 @@
+.aside-nav{
+    position:fixed;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    width: 300px;
+    z-index: 5;
+}
+.lists {
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: #151217;
+    text-transform: uppercase;
+  
+  }
+  .lists li {
+    padding: 20px 30px;
+    font-weight: bold;
+  }
+  .lists a{
+    text-decoration: none;
+    color: #151217;
+  }
+  
+  .lists a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: #DA001E;
+  }

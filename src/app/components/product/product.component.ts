@@ -19,14 +19,16 @@ export class ProductComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private productService: ProductService) { }
 
   ngOnInit(): void {
-
+    window.scrollTo(0,0)
     this.slug = this.route.snapshot.params["slug"]
-    /*this.productSub = this.productService.getProducts().subscribe({
+    this.productSub = this.productService.getProducts().subscribe({
       next: (products: Product[])=>{
-        const product = products.filter(i => i.slug === this.slug)
+        this.product = products.filter(i => i.slug === this.slug)[0]
+      },
+      error: (error: any)=> {
+        console.log("Erreur : ", error);
       }
-    })*/
-    
+    })   
   }
   ngOnDestroy(): void {
       this.productSub?.unsubscribe()

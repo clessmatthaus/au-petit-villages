@@ -1,19 +1,19 @@
 <div class="product-container">
     <div class="title-product">
-      <h2>Astérix, un personnage dans la bande dessinée Astérix et Obélix </h2>
+      <h2>{{product?.name}}</h2>
     </div>
     <div class="infos-container">
       <div class="img-container">
-        <img src="./assets/images/products/asterix1.jpg">
+        <img [src]="product ? product.imageUrl[0] : '' " [alt]="product?.name">
         <div class="img-slider">
-          <img src="./assets/images/products/asterix2.jpg" height="160px" width="160px">
-          <img src="./assets/images/products/asterix3.jpg" height="160px" width="160px">
-          <img src="./assets/images/products/asterix1.jpg" height="160px" width="160px">
+          <img [src]="product ? product.imageUrl[1] : '' " [alt]="product?.name"  width="180px">
+          <img [src]="product ? product.imageUrl[2] : '' " [alt]="product?.name"  width="180px">
+          <img [src]="product ? product.imageUrl[3] : '' " [alt]="product?.name"  width="180px">
         </div>
       </div>
       <div class="infos-product">
       <h4>Description</h4>
-      <p class="p-desc">Astérix, Obélix et Idéfix sont de retour. Accompagnés du plus célèbre des druides. Le duo, toujours à pied d'œuvre pour imaginer de nouvelles aventures, s'inscrit dans le fabuleux univers créé par René Goscinny et Albert Uderzo.</p>
+      <p class="p-desc">{{product?.description}}</p>
       <div class="caract">
         <h5>Caracteristiques generales</h5>
         <div class="critere">
@@ -24,9 +24,9 @@
         </div>
       </div>
         <div class="product-price">
-          <h3>Prix 44.55 $</h3>
+          <h3>{{(product?.sold_price || 0 )/100 |currency: "EUR"}}</h3>
           <del>
-            <h3>51.99 $</h3>
+            <h3>{{(product?.regular_price || 0 )/100 |currency: "EUR"}}</h3>
           </del>
         </div>
         <div class="panier">

@@ -16,9 +16,12 @@
             <h2>{{product?.name}}</h2>
             <p>{{product?.description}}</p>
             <div class="modal-price-details">
-                <h4>{{(product?.sold_price || 0)/100}} $</h4>
-                <del><h4>{{(product?.regular_price || 0)/100}} $</h4></del>
+                <h4>{{(product?.sold_price || 0)/100 |currency: "EUR"}}</h4>
+                <del><h4>{{(product?.regular_price || 0)/100 |currency: "EUR"}}</h4></del>
             </div>
+            <a [routerLink]="['product', product?.slug]">
+            <button class="achat">Voir en details</button>
+            </a>
         </div>
         
     </div>

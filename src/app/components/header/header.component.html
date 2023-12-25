@@ -1,12 +1,16 @@
 <header>
-    <div class="logo">
+  <div class="none" (click)="handleDisplayMobileNav()">
+    <img src="assets/menus.png" alt="menu">
+  </div>
+  <div class="logo">
+    <a routerLink="">
      <img src="assets/villages.png" alt="logo">
-    </div>
+    </a>
+  </div>
     <div class="nav-bar">
       <ul>
-        <li><a routerLink="">Accueil</a></li>
-        <!--<li><a routerLink="produit">Produit</a></li>-->
-        <li><a routerLink="apropos">À-propos</a></li>
+        <li *ngFor="let item of navData"><a [routerLink]="item?.path">{{item?.name}}</a></li>
       </ul>
     </div>
 </header>
+<app-nav-menu *ngIf="isDisplayMobileNav" (close)="handleCloseMobileNav()"></app-nav-menu>

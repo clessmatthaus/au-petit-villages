@@ -1,27 +1,26 @@
-<a [routerLink]="['product', product?.slug]">
-<div class="product-item" (click)="handleClickProduct(product)">
-    <div class="product-image">
+<div class="product-item">
+  <a [routerLink]="['product', product?.slug]">
+     <div class="product-image">
       <img
       [src]="product ? product.imageUrl[0] : ''"
       height="350px" width="360px"
       [alt]="product?.name">
-    </div>
-    
+    </div>   
+  </a>
     <div class="product-details">
       <div class="product-name">
         <h3>{{product?.name}}</h3>
         <p>{{product?.description}} </p>
       </div>
       <div class="product-price">
-        <h4>{{(product?.sold_price || 0 )/100 }} $ </h4>
+        <h4>{{(product?.sold_price || 0 )/100 |currency: "EUR"}}</h4>
         <del>
-          <h4>{{(product?.regular_price || 0 )/100}} $ </h4>
+          <h4>{{(product?.regular_price || 0 )/100 |currency: "EUR"}}</h4>
         </del>
       </div>
       <div class="infos-details">
-        <button id="apercu">Aperçu</button>
-        <button id="details">Voir en details</button>
+        <button id="apercu" (click)="handleClickProduct(product)">Aperçu</button>
+        
       </div>
     </div> 
 </div>
-</a>

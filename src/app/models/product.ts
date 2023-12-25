@@ -5,6 +5,6 @@ export interface Product {
     imageUrl: string[],
     sold_price: number,
     regular_price: number,
-    slug?: string 
+    slug?: string,
 
 }

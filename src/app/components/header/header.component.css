@@ -1,7 +1,7 @@
 header{
     background-color: white;
     height: 120px;
-    color: #151217 ;
+    color: #151217;
     font-weight: bold;
     text-align: center;
     display: flex;
@@ -13,6 +13,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 5;
+    box-shadow: 0 3px 3px -1px rgb(212, 212, 212),  0 3px rgb(209, 207, 207), 0 1px 3px whitesmoke;
   }
   header .nav-bar ul{
     display: flex;
@@ -21,14 +22,18 @@ header{
     text-decoration: none;
     color: #151217;
     margin-right: 130px;
+    text-transform: uppercase;
   
   }
   header a{
     text-decoration: none;
     color: #151217;
   }
+  .none{
+    display: none;
+  }
   header a:hover {
-    border-bottom: 1px solid #DA001E;
+    font-weight: bold;
     text-decoration: none;
     color: #DA001E;
   }
@@ -46,11 +51,23 @@ header{
     header .nav-bar ul{
       margin-right: 10px;
       font-size: 14px;
+      display: none;
     }
     .logo img{
-     margin-left: 10px;
-  
+     margin-left: 120px;
+     display:block;
     }
+    .none{
+      display: block;
+      margin-left: 80px;
+      cursor:pointer;
+    }
+    .none img:hover{
+      background-color: #DA001E;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
   }
   @media (max-width: 415px){
     header{

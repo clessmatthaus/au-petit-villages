@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import {ROUTES} from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductModalComponent } from './components/product-modal/product-modal.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProductModalComponent } from './components/product-modal/product-modal.
     MainContainerComponent,
     ProductComponent,
     ProductItemComponent,
-    ProductModalComponent
+    ProductModalComponent,
+    NavMenuComponent
   ],
   imports: [
     BrowserModule,

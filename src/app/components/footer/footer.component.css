@@ -28,20 +28,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    
   }
   .links img{
-   width: 35px;
+   width: 30px;
    margin: 0 10px;
    cursor: pointer;
   }
   .footer-bt{
     height: 35px;
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #DA001E;
     margin: 10px 0;
   }
   .footer-bt p{

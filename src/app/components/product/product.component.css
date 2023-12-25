@@ -5,11 +5,10 @@
     }
     .title-product{
       height: 60px;
-      width: 100%;
-      color: white;
-      background-color: #151217;
+      color: black;
+      background-color: white;
       padding-top: 10px;
-      border: 0.3px solid #151217;
+      border: 0.3px solid white;
       border-radius: 0px 0px 50px 50px;
     
     }
@@ -30,6 +29,7 @@
       background-color: white;
       border: 0.3px solid white;
       border-radius: 10px;
+      box-shadow: 0 3px 5px -1px rgb(187, 185, 185),  0 6px 10px rgb(201, 200, 200), 0 1px 13px rgb(197, 197, 197);
     }
     .infos-product{
       width: 40% ;
@@ -37,6 +37,7 @@
       background-color: white;
       border: 0.3px solid white;
       border-radius: 10px;
+      box-shadow: 0 3px 5px -1px rgb(187, 185, 185),  0 6px 10px rgb(201, 200, 200), 0 1px 13px rgb(197, 197, 197);
     }
     .img-container{
       display: flex;
@@ -44,15 +45,20 @@
       justify-content: center;
       gap: 60px;
     }
+    .img-container img{
+      width: 60%;
+    }
     .img-slider{
       display: flex;
       flex-direction: column;
       justify-content: center;
+      border: 1px solid white;
       gap: 40px;
       padding: 10px;
       background-color: white;
-      border: 1px solid white;
+      
       border-radius: 5px;
+      
     }
     .img-slider img{
       cursor: pointer;
@@ -61,7 +67,7 @@
       padding: 3px;
     }
     .img-slider img:hover{
-      border: 2px solid #FDD90B;
+      border: 2px solid #DA001E;
     }
     .infos-product{
       padding: 0;
@@ -132,12 +138,12 @@
       color: white;
       font-weight: bold;
       background-color: #DA001E;
-      border-radius: 50px;
+      border-radius: 10px;
       cursor: pointer;
     }
     .btn-panier:hover{
-      background-color: #FDD90B;
-      border: 1px solid #FDD90B;
+      background-color: black;
+      border: 1px solid black;
     }
     .livraison{
       border-top: 1px solid whitesmoke;
@@ -231,7 +237,7 @@
     @media (max-width: 370px){
       .title-product h2{
         font-size: 10px;
-        text-align: start;
+        text-align: center;
       }
       .img-container img{
         width: 130px;

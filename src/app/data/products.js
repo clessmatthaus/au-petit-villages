@@ -9,8 +9,8 @@ let products = [
       './assets/images/products/asterix3.jpg'
     ],
     sold_price: 3999,
-    regular_price: 4599,
-    slug: 'asterix'
+    regular_price: 4599
+    
 
   },
   {
@@ -24,8 +24,7 @@ let products = [
       './assets/images/products/obelix5.jpg'
     ],
     sold_price: 3599,
-    regular_price: 4599,
-    slug: 'obelix'
+    regular_price: 4599
   },
   {
     _id:'3',
@@ -38,8 +37,7 @@ let products = [
       './assets/images/products/panoramix4.jpg'
     ],
     sold_price: 4150,
-    regular_price: 4789,
-    slug: 'panoramix'
+    regular_price: 4789
   },
   {
     _id:'4',
@@ -51,8 +49,7 @@ let products = [
       './assets/images/products/agecanonix3.jpg'
     ],
     sold_price: 3799,
-    regular_price: 5199,
-    slug: 'agecanonix'
+    regular_price: 5199
   },
   {
     _id:'5',
@@ -64,8 +61,7 @@ let products = [
       './assets/images/products/abraracourcix3.jpg'
     ],
     sold_price: 5299,
-    regular_price: 5599,
-    slug: 'abraracourcix'
+    regular_price: 5599
   },
   {
     _id:'6',
@@ -78,8 +74,7 @@ let products = [
       './assets/images/products/idefix3.jpg'
     ],
     sold_price: 3499,
-    regular_price: 4050,
-    slug: 'idefix'
+    regular_price: 4050
   },
   {
     _id:'7',
@@ -92,8 +87,7 @@ let products = [
       "./assets/images/products/bonemine4.png"
     ],
     sold_price: 3499,
-    regular_price: 4050,
-    slug: 'bonemine'
+    regular_price: 4050
   },
   {
     _id:'8',
@@ -106,8 +100,7 @@ let products = [
       './assets/images/products/assurancetourix4.jpg'
     ],
     sold_price: 4499,
-    regular_price: 4950,
-    slug: 'assurancetourix'
+    regular_price: 4950
   },
 
 ]
