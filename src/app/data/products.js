@@ -1,7 +1,7 @@
 let products = [
   {
     _id:'1',
-    name: 'Figurine Astérix',
+    name: 'Astérix',
     description: "Astérix est un personnage de fiction créé par Goscinny et Albert Udezo dans la bande dessinée Astérix en 1959",
     imageUrl:[
       './assets/images/products/asterix1.jpg',
@@ -15,7 +15,7 @@ let products = [
   },
   {
     _id:'2',
-    name: 'Figurine Obélix',
+    name: 'Obélix',
     description: "Obélix est un personnage de fiction créé par Goscinny et Albert Udezo dans la bande dessinée Astérix en 1959. Il est le meilleur ami d'Astérix.",
     imageUrl:[
       './assets/images/products/obelix2.jpg',
@@ -28,7 +28,7 @@ let products = [
   },
   {
     _id:'3',
-    name: 'Figurine Panoramix',
+    name: 'Panoramix',
     description: "Panoramix est le principal druide de la bande dessinée Asterix, de René Goscinny et Albert Uderzo.",
     imageUrl:[
       './assets/images/products/panoramix1.jpg',
@@ -41,7 +41,7 @@ let products = [
   },
   {
     _id:'4',
-    name: 'Figurine Agecanomix',
+    name: 'Agecanomix',
     description: "Agecanomix est un personnage de fiction. Le doyen de la tribu, Il est la preuve vivante que la potion magique conserve.",
     imageUrl:[
       './assets/images/products/agecanonix1.jpg',
@@ -53,7 +53,7 @@ let products = [
   },
   {
     _id:'5',
-    name: 'Figurine Abraracourcix',
+    name: 'Abraracourcix',
     description: "Abaracourcix est un personnage de fiction. Chef du village d'Astérix et Obélix dans la bande dessinée d'Astérix.",
     imageUrl:[
       './assets/images/products/abraracourcix1.jpg',
@@ -65,7 +65,7 @@ let products = [
   },
   {
     _id:'6',
-    name: 'Figurine Idéfix',
+    name: 'Idéfix',
     description: "Idéfix est un chien de fiction de la bande dessinée Astérix, il s'agit de l'animal de compagnie d'Obélix",
     imageUrl:[
       './assets/images/products/idefix.jpg',
@@ -78,7 +78,7 @@ let products = [
   },
   {
     _id:'7',
-    name: 'Figurine Bonemine',
+    name: 'Bonemine',
     description: "Bonemine est la femme d'Abaracourcix et la soeur d'Homéopatix, elle est blonde, petite et rondelette.",
     imageUrl:[
       "./assets/images/products/bonemine1.jpg",
@@ -91,7 +91,7 @@ let products = [
   },
   {
     _id:'8',
-    name: 'Figurine Assurancetourix',
+    name: 'Assurancetourix',
     description: "Assurancetourix est le barde du village d'Astérix et Obélix dans la bande dessinée d'Astérix.",
     imageUrl:[
       './assets/images/products/assurancetourix1.jpg',

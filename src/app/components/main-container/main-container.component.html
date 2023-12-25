@@ -6,6 +6,12 @@
         dessinée Astérix et Obélix.<br/>Elle cible une population jeune entre 30 et 55 ans, nostalgique des aventures des célèbres
         Gaulois. </p>
     </div>
+    <div class="search-product">
+      <div class="search-name">
+        <input type="text" value="" placeholder="Rechercher un produit" [(ngModel)]="searchTerm" (keyup)="search($event)">
+        <img src="./assets/images/chercher.png" alt="">
+      </div>
+    </div>
     <h2>Catalogue produits</h2>
       <app-catalogue-product></app-catalogue-product>
   </div>

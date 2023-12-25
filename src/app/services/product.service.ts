@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Product} from '../models/product';
 import { HttpClient } from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {BehaviorSubject, Observable, catchError, tap} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ import {Observable} from 'rxjs';
 export class ProductService {
 
   private products: Product[] = []
+  public search = new BehaviorSubject<string>("");
 
   private urlApi:string = "http://localhost/assets/api/products.json"
 
@@ -28,6 +29,11 @@ export class ProductService {
       }
     })
 
+  }*/
+  /*searchProduct(name: string): Observable<Product[]>{
+    return this.http.get<Product[]>(`http://localhost/assets/api/products.json/?name=${name}`).pipe(
+        tap((response)=> console.log(response)),
+    );
   }*/
   addProduct(product: Product){
 

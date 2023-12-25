@@ -4,7 +4,38 @@
     padding:0px 0;
     backdrop-filter: blur(5px);
     padding-bottom: 50px;
-    background-color: rgb(233, 227, 227);
+    background-color: white;
+  }
+  .search-product{
+    height: 160px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .search-product .search-name{
+    width: 60%;
+    height: 150px;
+    padding: 10px 320px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 3px 5px -1px rgb(187, 185, 185),  0 6px 10px rgb(201, 200, 200), 0 1px 13px rgb(197, 197, 197);
+    border-radius: 5px;
+  }
+  .search-name input{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgb(201, 198, 198);
+    background-color: white;
+    border-radius: 5px;
+  }
+  .search-name img{
+    cursor: pointer;
+    width:25px;
+    margin-left: -33px;
   }
   .section h2{
     text-align: center;
@@ -22,8 +53,6 @@
     padding: 20px;
     margin: 80px 145px;
     text-align: center;
-    background-color: whitesmoke;
-    border: 2px solid whitesmoke;
     line-height: 1.3;
     font-family: 'Comfortaa', sans-serif;
   }

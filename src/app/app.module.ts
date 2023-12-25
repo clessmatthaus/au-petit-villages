@@ -17,6 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductModalComponent } from './components/product-modal/product-modal.component';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import {SliderComponent} from './components/slider/slider.component';
+import { FilterPipe } from './filter.pipe';
+
 
 
 @NgModule({
@@ -32,7 +34,10 @@ import {SliderComponent} from './components/slider/slider.component';
     ProductItemComponent,
     ProductModalComponent,
     NavMenuComponent,
-    SliderComponent
+    SliderComponent,
+    FilterPipe,
+    
+    
   ],
   imports: [
     BrowserModule,

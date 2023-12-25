@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProductItemComponent } from "../product-item/product-item.component";
 import { ProductService } from './../../services/product.service';
 import { Subscription } from 'rxjs';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'app-catalogue-product',
@@ -13,6 +14,8 @@ import { Subscription } from 'rxjs';
 export class CatalogueProductComponent implements OnInit, OnDestroy {
 
   products: Product[] = []
+
+  searchKey:string = "";
 
   isDisplayModal: boolean = false
   modalProduct: Product | undefined
@@ -31,6 +34,9 @@ export class CatalogueProductComponent implements OnInit, OnDestroy {
       complete: ()=>{
         console.log("chargement de données terminée");
       },
+    });
+    this.productService.search.subscribe((val:any)=>{
+      this.searchKey = val;
     })
      
   }

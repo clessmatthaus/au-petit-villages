@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-main-container',
@@ -7,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainContainerComponent implements OnInit {
 
-  constructor() { }
+
+  public searchTerm: string = '';
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     window.scrollTo(0,0)
   }
-
+search(event:any){
+  this.searchTerm = (event.target as HTMLInputElement).value;
+  console.log(this.searchTerm);
+  this.productService.search.next(this.searchTerm);
+}
 }
