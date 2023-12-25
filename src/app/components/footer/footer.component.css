@@ -1,11 +1,11 @@
 .footer{
     padding: 10px 0;
-    background-color:  #151217;
+    background-color:  #DA001E;
     position: sticky;
   }
   .footer-content{
     height: calc(100% - 75vh - 120px);
-    background-color:  #151217;
+    background-color:  #DA001E;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DA001E;
+    background-color: black;
     margin: 10px 0;
   }
   .footer-bt p{

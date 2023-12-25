@@ -1,0 +1,6 @@
+<div class="slider">
+    <div class="slide-item" [ngStyle]="{'background-image' : 'url('+slider[currentIndex]?.imageUrl+')', 'background-repeat': 'no-repeat', 'background-size':'350px', 'background-position': 'center'}">
+        <img src="./assets/images/left.svg" alt="" class="left" (click)="handleChangeImage(-1)">
+        <img src="./assets/images/right.svg" alt="" class="right" (click)="handleChangeImage(1)">
+    </div>
+</div>

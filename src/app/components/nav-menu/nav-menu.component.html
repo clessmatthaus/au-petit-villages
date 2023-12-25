@@ -1,4 +1,4 @@
-<div class="aside-nav mobile-nav">
+<div class="aside-nav mobile-nav" (mouseleave)="handleClose()">
     <ul class="lists">
         <li *ngFor="let item of navData"><a (click)="handleClose()" [routerLink]="item?.path">{{item?.name}}</a></li>
     </ul>

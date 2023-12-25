@@ -1,15 +1,15 @@
 .product-container{
     width: 100%;
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(240, 239, 239);
     padding-bottom:50px ;
     }
     .title-product{
       height: 60px;
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: #DA001E;
       padding-top: 10px;
-      border: 0.3px solid white;
-      border-radius: 0px 0px 50px 50px;
+      border: 0.3px solid #DA001E;
+      
     
     }
     .title-product h2{
@@ -17,7 +17,7 @@
       margin-top: 10px;
     }
     .infos-container{
-      padding:6%;
+      padding:5%;
       display: flex;
       flex-direction: row;
       justify-content: center;
