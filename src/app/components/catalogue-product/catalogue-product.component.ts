@@ -38,8 +38,9 @@ export class CatalogueProductComponent implements OnInit, OnDestroy {
     this.productService.search.subscribe((val:any)=>{
       this.searchKey = val;
     })
-     
-  }
+
+    }
+   
   ngOnDestroy(): void {
       this.productSub?.unsubscribe()
   }

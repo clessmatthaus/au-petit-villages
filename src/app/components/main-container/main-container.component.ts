@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -10,8 +11,10 @@ export class MainContainerComponent implements OnInit {
 
 
   public searchTerm: string = '';
+  
 
   constructor(private productService: ProductService) { }
+  
 
   ngOnInit(): void {
     window.scrollTo(0,0)
@@ -21,4 +24,5 @@ search(event:any){
   console.log(this.searchTerm);
   this.productService.search.next(this.searchTerm);
 }
+
 }

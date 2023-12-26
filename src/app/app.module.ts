@@ -18,6 +18,9 @@ import { ProductModalComponent } from './components/product-modal/product-modal.
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
 import {SliderComponent} from './components/slider/slider.component';
 import { FilterPipe } from './filter.pipe';
+import { SortPipe } from './sort.pipe';
+import { OrderModule } from 'ngx-order-pipe';
+import { PanierComponent } from './components/panier/panier.component';
 
 
 
@@ -36,11 +39,14 @@ import { FilterPipe } from './filter.pipe';
     NavMenuComponent,
     SliderComponent,
     FilterPipe,
+    SortPipe,
+    PanierComponent,
     
     
   ],
   imports: [
     BrowserModule,
+    OrderModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,

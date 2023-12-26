@@ -12,5 +12,11 @@
         <li *ngFor="let item of navData"><a [routerLink]="item?.path">{{item?.name}}</a></li>
       </ul>
     </div>
+    <a routerLink="panier">
+      <div class="panier-icon">     
+      <img src="assets/images/paniers.png" alt="logo" width="50px" class="paniers">   
+      <p>0</p>    
+    </div>
+     </a>
 </header>
 <app-nav-menu *ngIf="isDisplayMobileNav" (close)="handleCloseMobileNav()"></app-nav-menu>

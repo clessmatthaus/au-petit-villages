@@ -8,8 +8,15 @@
     </div>
     <div class="search-product">
       <div class="search-name">
+      <div class="search">
         <input type="text" value="" placeholder="Rechercher un produit" [(ngModel)]="searchTerm" (keyup)="search($event)">
         <img src="./assets/images/chercher.png" alt="">
+      </div>
+        <div class="tri">
+          <h3>Trier par </h3>
+          <button class=" btn moins">Par prix croissant</button>
+          <button class="btn plus">Par prix décroissant</button>
+        </div>
       </div>
     </div>
     <h2>Catalogue produits</h2>

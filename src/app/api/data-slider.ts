@@ -31,6 +31,19 @@ export const sliderData: Slide[] = [
         name:'slide7'
     },
     {
-        imageUrl: "/assets/images/slider/fig8.png"
+        imageUrl: "/assets/images/slider/fig8.png",
+        name:'slide8'
+    },
+    {
+        imageUrl: "/assets/images/slider/fig9.png",
+        name:'slide9'
+    },
+    {
+        imageUrl: "/assets/images/slider/fig10.png",
+        name:'slide10'
+    },
+    {
+        imageUrl: "/assets/images/slider/fig11.png",
+        name:'slide11'
     }
 ]

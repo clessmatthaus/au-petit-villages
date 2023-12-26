@@ -1,0 +1,105 @@
+.card-container{
+    height: 70vh;
+    background-color: white;
+    background-image: url("src/asterix-back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 150px;
+}
+.card{
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border: 0.3px solid white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px -1px rgb(214, 214, 214),  0 6px 10px rgb(224, 224, 224), 0 1px 13px rgb(197, 197, 197);
+}
+.card-paniers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+.card-paniers h5{
+    font-size: 19px;
+}
+.btn-panier{
+    padding: 10px 70px;
+    background-color: #FDD90B;
+    border: 0.5px solid #FDD90B;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 850px){
+    .card-container{
+        padding: 80px 50px;
+        
+    }
+}
+@media (max-width: 680px){
+    .card-container{
+        padding: 80px 50px;
+        
+    }
+}
+@media (max-width: 555px){
+    .card-container{
+        padding: 80px 30px;
+        
+    }
+}
+@media (max-width: 445px){
+    .card-container{
+        padding: 80px 10px;
+        
+    }
+    .card{
+        padding: 20px 10px;
+    }
+}
+@media (max-width: 380px){
+    .card-container{
+        padding: 80px 7px;
+        
+    }
+    .card{
+        padding: 20px 10px;
+    }
+    .card-paniers h5{
+        font-size: 15px;
+    }
+    .btn-panier{
+        padding: 5px 20px;
+        background-color: #FDD90B;
+        border: 0.5px solid #FDD90B;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 350px){
+    .card-container{
+        padding: 80px 5px;
+        
+    }
+    .card{
+        padding: 20px 5px;
+    }
+    .card-paniers h5{
+        font-size: 13px;
+    }
+    .btn-panier{
+        padding: 5px 14px;
+        background-color: #FDD90B;
+        border: 0.5px solid #FDD90B;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
