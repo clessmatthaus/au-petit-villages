@@ -36,7 +36,7 @@ export class ProductService {
     );
   }*/
   addProduct(product: Product){
-
+  this.products.push(product);
   }
   editProduct(_id: string, product: Product){
 

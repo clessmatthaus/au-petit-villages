@@ -9,8 +9,9 @@ import { Product } from 'src/app/models/product';
 export class ProductItemComponent implements OnInit {
   @Input() product: Product | undefined
   @Output() displayProductPage: EventEmitter<Product> = new EventEmitter<Product>()
-  
+ 
   @Output() displayProductModal: EventEmitter<Product> = new EventEmitter<Product>()
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,5 +22,7 @@ export class ProductItemComponent implements OnInit {
   handleClickProduct(product: Product | undefined){
     this.displayProductModal.emit(product)
   }
+  
+
 
 }

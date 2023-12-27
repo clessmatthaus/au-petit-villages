@@ -1,10 +1,7 @@
 .card-container{
     height: 70vh;
     background-color: white;
-    background-image: url("src/asterix-back1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 150px;
+    padding: 50px 150px;
 }
 .card{
     height: 100%;
@@ -12,12 +9,11 @@
     gap: 30px;
     flex-direction: column;
     background-color: white;
+    opacity: 0.9;
     justify-content: center;
+    z-index: 5;
     align-items: center;
-    border: 0.3px solid white;
-    padding: 20px 30px;
-    border-radius: 5px;
-    box-shadow: 0 3px 5px -1px rgb(214, 214, 214),  0 6px 10px rgb(224, 224, 224), 0 1px 13px rgb(197, 197, 197);
+    border: 0.3px solid white; 
 }
 .card-paniers{
     display: flex;
@@ -38,7 +34,26 @@
     font-weight: bold;
     cursor: pointer;
 }
-@media (max-width: 850px){
+.card-table{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    min-width: none;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid rgb(238, 236, 236);
+    border-radius: .25rem;
+}tbody{
+    padding: 10px 0;
+}
+@media (max-width: 1150px){
+    .card-container{
+        padding: 80px 50px;
+        
+    }
+}
+@media (max-width: 980px){
     .card-container{
         padding: 80px 50px;
         

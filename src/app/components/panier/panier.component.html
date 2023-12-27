@@ -1,4 +1,45 @@
 <ng-container *ngIf="true">
+<div class="card-table">
+    <div class="card-product">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Identifiant produit</th>
+                    <th>Nom de produit</th>
+                    <th>Image produit</th>
+                    <th>Déscription</th>
+                    <th>Prix soldé</th>   
+                    <th>Quantité</th>
+                    <th>Prix regulier</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>asterix</td>
+                    <td><img src="./assets/images/products/asterix1.jpg" width="60px"></td>
+                    <td>figurine asterix</td>
+                    <td>44.99 $</td>
+                    <td>1</td>
+                    <td>55.10 $</td>                
+                    
+                   <td><button class="btn btn-danger">supprimer</button></td> 
+                </tr>
+            <tr>   
+                <td colspan="4"></td>        
+                <td><button class="btn btn-danger">Empty cart</button></td>
+                <td><button routerLink="" class="btn btn-success">Shop more</button></td>
+                <td> <button class="btn btn-warning">Checkout</button></td> 
+                <td><strong>Total: 0</strong></td>
+            </tr>               
+            </tbody>
+        </table>
+    </div>
+</div>
+</ng-container>
+
+<ng-container *ngIf="true">
     <div class="card-container">
         <div class="card">
             <div class="card-paniers">

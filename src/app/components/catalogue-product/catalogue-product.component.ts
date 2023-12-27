@@ -5,6 +5,7 @@ import { ProductItemComponent } from "../product-item/product-item.component";
 import { ProductService } from './../../services/product.service';
 import { Subscription } from 'rxjs';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
+import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-catalogue-product',
@@ -21,7 +22,7 @@ export class CatalogueProductComponent implements OnInit, OnDestroy {
   modalProduct: Product | undefined
   productSub: Subscription | undefined
   
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService, private cart: CartService) { }
 
   ngOnInit(): void {
     this.productSub = this.productService.getProducts().subscribe({
@@ -40,7 +41,6 @@ export class CatalogueProductComponent implements OnInit, OnDestroy {
     })
 
     }
-   
   ngOnDestroy(): void {
       this.productSub?.unsubscribe()
   }

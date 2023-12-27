@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { PanierComponent } from './components/panier/panier.component';
 import { RouterModule } from '@angular/router';
 import {ROUTES} from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,7 +21,8 @@ import {SliderComponent} from './components/slider/slider.component';
 import { FilterPipe } from './filter.pipe';
 import { SortPipe } from './sort.pipe';
 import { OrderModule } from 'ngx-order-pipe';
-import { PanierComponent } from './components/panier/panier.component';
+import { ProductlistComponent } from './components/productlist/productlist.component';
+
 
 
 
@@ -41,6 +43,7 @@ import { PanierComponent } from './components/panier/panier.component';
     FilterPipe,
     SortPipe,
     PanierComponent,
+    ProductlistComponent,
     
     
   ],

@@ -1,12 +1,10 @@
 <div class="product-item">
-  <a [routerLink]="['product', product?.slug]">
      <div class="product-image">
       <img
       [src]="product ? product.imageUrl[0] : ''"
       height="350px" width="360px"
       [alt]="product?.name">
     </div>   
-  </a>
     <div class="product-details">
       <div class="product-name">
         <h3>{{product?.name}}</h3>
@@ -19,8 +17,8 @@
         </del>
       </div>
       <div class="infos-details">
-        <button id="apercu" (click)="handleClickProduct(product)">Aperçu</button>
-        
+        <button id="apercu" (click)="handleClickProduct(product)">Aperçu</button>   
+        <button id="apercu" [routerLink]="['product', product?.slug]">Details</button> 
       </div>
     </div> 
-</div>
+  </div>
