@@ -57,4 +57,6 @@ export class CatalogueProductComponent implements OnInit, OnDestroy {
     this.isDisplayModal= false
       this.modalProduct = undefined
   }
+ 
+  
 }

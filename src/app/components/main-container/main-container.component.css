@@ -37,7 +37,7 @@
     flex-direction: row;
     gap: 20px;
     margin-top: 30px;
-    color: white;
+    color: black;
   }
   .btn{
     padding: 5px 10px;
@@ -45,8 +45,10 @@
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
+    color: black;
   }
-  .btn:hover{
+
+  .tri .btn:hover{
     background-color: gray;
     color: white;
     border: 0.3px solid gray;

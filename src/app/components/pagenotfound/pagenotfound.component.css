@@ -1,0 +1,8 @@
+.page_404{
+    padding: 40px 0;
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image:url("/assets/images/not1.jpeg") ;
+}

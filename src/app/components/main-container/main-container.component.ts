@@ -8,8 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./main-container.component.css']
 })
 export class MainContainerComponent implements OnInit {
-
-
+  products: Product[] = []
   public searchTerm: string = '';
   
 
@@ -25,4 +24,16 @@ search(event:any){
   this.productService.search.next(this.searchTerm);
 }
 
+/*sort(order:any){
+  if(order=='asc'){
+    this.products.sort((p1, p2)=>{
+      return p1.sold_price > p2.sold_price ? 1 : -1;
+    })
+  }
+  else{
+    this.products.sort((p1, p2)=>{
+      return p1.sold_price > p2.sold_price ? -1 : 1;
+    })
+  }
+}*/
 }

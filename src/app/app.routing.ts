@@ -5,6 +5,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { ProductComponent } from "./components/product/product.component";
 import { ProductlistComponent } from "./components/productlist/productlist.component";
 import { PanierComponent } from "./components/panier/panier.component";
+import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.component";
 
 
 
@@ -37,6 +38,11 @@ export const ROUTES: Routes = [
     {
       path: "productlist",
       component: ProductlistComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "**",
+      component: PagenotfoundComponent,
       pathMatch: 'full'
     }
 ];

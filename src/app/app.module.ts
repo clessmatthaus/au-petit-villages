@@ -24,10 +24,6 @@ import { OrderModule } from 'ngx-order-pipe';
 import { ProductlistComponent } from './components/productlist/productlist.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,8 +42,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     SortPipe,
     PanierComponent,
     ProductlistComponent,
-    PagenotfoundComponent,
-    
+    PagenotfoundComponent,  
     
   ],
   imports: [

@@ -17,28 +17,24 @@
             </thead>
             <tbody *ngFor="let article of articles; let i = index">
                 <tr>
-                    <td>{{i+1}}</td>
-                    <td>{{article.name}}</td>
-                    <td><img [src]="article.imageUrl[1]" width="80px"></td>
-                    <td>{{article.description}}</td>
-                    <td>{{(article.sold_price || 0 )/100 |currency: "EUR"}}</td>                
-                    <td>{{(article.regular_price || 0 )/100 |currency: "EUR"}}</td>                
-                    <td>1</td>
-                    <td><strong>{{(article.total || 0 )/100 |currency: "EUR"}}</strong></td>
-                   <td><button class="btn btn-danger" (click)="delete(article)">supprimer</button></td> 
+                    <td class="descrp">{{i+1}}</td>
+                    <td class="descrp">{{article.name}}</td>
+                    <td class="img-a"><img [src]="article.imageUrl[1]" width="80px"></td>
+                    <td class="descrp">{{article.description}}</td>
+                    <td class="descrp">{{(article.sold_price || 0 )/100 |currency: "EUR"}}</td>                
+                    <td class="descrp">{{(article.regular_price || 0 )/100 |currency: "EUR"}}</td>                
+                    <td class="descrp">1</td>
+                    <td class="descrp"><strong>{{(article.total || 0 )/100 |currency: "EUR"}}</strong></td>
+                   <td><button class="btn btn-danger font-s" (click)="delete(article)">supprimer</button></td> 
                 </tr>
-            <tr>   
-                
+            <tr>               
             </tr>               
             </tbody>
-            <td colspan="4"></td>        
-        <td><button class="btn btn-danger" (click)="emptycart()">Vider le panier</button></td>
-        <td><button routerLink="" class="btn btn-success">Poursuivre vos achats</button></td>
-        <td> <button class="btn btn-warning">Verifier</button></td> 
-        <td><strong>TOTAL : {{(grandtotal || 0 )/100 |currency: "EUR":"symbol"}}</strong></td>
-        </table>
-        
-        
+            <td colspan="5"></td>        
+        <td><button class="btn btn-danger mx-2 font-s" (click)="emptycart()">supprimer</button></td>
+        <td><button routerLink="" class="btn btn-success mx-2 font-s">Poursuivre</button></td>
+        <td class="descrp"><strong>TOTAL : {{(grandtotal || 0 )/100 |currency: "EUR":"symbol"}}</strong></td>
+        </table>              
     </div>
 </div>
 </ng-container>
