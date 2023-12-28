@@ -1,1 +1,29 @@
-<p>productlist works!</p>
+<div class="product-container">
+  <div class="product-list">
+   <ng-container *ngFor="let article of productlist |orderBy: 'name'">
+    <div class="product-item" >
+        <div class="product-image">
+         <img
+         [src]="article.imageUrl[1]"
+         height="350px" width="379px"
+         alt="article.name">
+       </div>   
+       <div class="product-details">
+         <div class="product-name">
+           <h3>{{article.name}}</h3>
+           <p>{{article.description}}</p>
+         </div>
+         <div class="product-price">
+           <h4>{{(article.sold_price || 0 )/100 |currency: "EUR"}}</h4>
+           <del>
+             <h4>{{(article.regular_price || 0 )/100 |currency: "EUR"}}</h4>
+           </del>
+         </div>
+         <div class="infos-details">
+           <button id="apercu" (click)="addtocart(article)">Ajouter au panier</button>    
+         </div>
+       </div> 
+     </div>
+    </ng-container>
+  </div>
+</div>

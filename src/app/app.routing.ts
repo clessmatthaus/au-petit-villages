@@ -3,6 +3,7 @@ import { AproposComponent } from "./components/apropos/apropos.component";
 import { MainContainerComponent } from "./components/main-container/main-container.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { ProductComponent } from "./components/product/product.component";
+import { ProductlistComponent } from "./components/productlist/productlist.component";
 import { PanierComponent } from "./components/panier/panier.component";
 
 
@@ -31,6 +32,11 @@ export const ROUTES: Routes = [
     {
       path: "product/:slug",
       component: ProductComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "productlist",
+      component: ProductlistComponent,
       pathMatch: 'full'
     }
 ];

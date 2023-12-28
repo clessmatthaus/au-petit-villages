@@ -1,45 +1,49 @@
-<ng-container *ngIf="true">
+<ng-container *ngIf="articles.length!=0">
 <div class="card-table">
     <div class="card-product">
         <table class="table table-responsive">
             <thead>
                 <tr>
-                    <th>Identifiant produit</th>
-                    <th>Nom de produit</th>
-                    <th>Image produit</th>
+                    <th>R. article</th>
+                    <th>Nom article</th>
+                    <th>Image article</th>
                     <th>Déscription</th>
-                    <th>Prix soldé</th>   
-                    <th>Quantité</th>
+                    <th>Prix soldé</th>                 
                     <th>Prix regulier</th>
-                    <th>Action</th>
+                    <th>Quantité</th>
+                    <th>Total</th>
+                    <th>Supprimer</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody *ngFor="let article of articles; let i = index">
                 <tr>
+                    <td>{{i+1}}</td>
+                    <td>{{article.name}}</td>
+                    <td><img [src]="article.imageUrl[1]" width="80px"></td>
+                    <td>{{article.description}}</td>
+                    <td>{{(article.sold_price || 0 )/100 |currency: "EUR"}}</td>                
+                    <td>{{(article.regular_price || 0 )/100 |currency: "EUR"}}</td>                
                     <td>1</td>
-                    <td>asterix</td>
-                    <td><img src="./assets/images/products/asterix1.jpg" width="60px"></td>
-                    <td>figurine asterix</td>
-                    <td>44.99 $</td>
-                    <td>1</td>
-                    <td>55.10 $</td>                
-                    
-                   <td><button class="btn btn-danger">supprimer</button></td> 
+                    <td><strong>{{(article.total || 0 )/100 |currency: "EUR"}}</strong></td>
+                   <td><button class="btn btn-danger" (click)="delete(article)">supprimer</button></td> 
                 </tr>
             <tr>   
-                <td colspan="4"></td>        
-                <td><button class="btn btn-danger">Empty cart</button></td>
-                <td><button routerLink="" class="btn btn-success">Shop more</button></td>
-                <td> <button class="btn btn-warning">Checkout</button></td> 
-                <td><strong>Total: 0</strong></td>
+                
             </tr>               
             </tbody>
+            <td colspan="4"></td>        
+        <td><button class="btn btn-danger" (click)="emptycart()">Vider le panier</button></td>
+        <td><button routerLink="" class="btn btn-success">Poursuivre vos achats</button></td>
+        <td> <button class="btn btn-warning">Verifier</button></td> 
+        <td><strong>TOTAL : {{(grandtotal || 0 )/100 |currency: "EUR":"symbol"}}</strong></td>
         </table>
+        
+        
     </div>
 </div>
 </ng-container>
 
-<ng-container *ngIf="true">
+<ng-container *ngIf="articles.length==0">
     <div class="card-container">
         <div class="card">
             <div class="card-paniers">
@@ -47,7 +51,7 @@
                 <h5>Votre panier est vide</h5> 
             </div>
             <p>En maque d'inspiration ?</p>  
-            <a routerLink="">
+            <a routerLink="/productlist">
                 <button class="btn-panier">Voir les meilleurs offres</button>
             </a>
         </div>

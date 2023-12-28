@@ -6,38 +6,38 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class CartService {
 
-  public cartItemList: any = []
-  public productList = new BehaviorSubject<any>([]);
+  public cartitemlist: any = []
+  public productlist = new BehaviorSubject<any>([]);
+  
 
   constructor() { }
-  getProducts(){
-    return this.productList.asObservable
+  getproduct(){
+    return this.productlist.asObservable();
   }
-  addtoCart(product: any){
-    this.cartItemList.push(product);
-    this.productList.next(this.cartItemList);
-    /*this.getTotalPrice();*/
+  //add to cart
+  addtocart(product: any){
+    this.cartitemlist.push(product);
+    this.productlist.next(this.cartitemlist);
+    this.totalprice()
   }
-  setProduct(product: any){
-    this.cartItemList.push(...product);
-    this.productList.next(product);
-  }
- 
-  getTotalPrice(){
-    let sommeTotal = 0;
-    this.cartItemList.map((i:any)=>{
-      sommeTotal += i.total;
+  //total price
+  totalprice():number{
+    let grandtotal = 0;
+    this.cartitemlist.map((i:any)=>{
+      grandtotal += i.total;
+      //console.log(grandtotal);
     })
+    return grandtotal;
   }
-  removeCartItem(product: any){
-    this.cartItemList.map((i:any, index:any)=>{
-      if(product.id===i.id){
-        this.cartItemList.splice(index, 1);
-      }
+  removeallcart(){
+    this.cartitemlist=[]
+    this.productlist.next(this.cartitemlist);
+  }  
+  removeallcartarticle(article: any){
+    this.cartitemlist.map((i:any, index:any)=>{
+      if(article.id === i.id)
+      this.cartitemlist.splice(index, 1)
     })
-  }
-  removeAllCart(){
-    this.cartItemList = []
-    this.productList.next(this.cartItemList);
+    this.productlist.next(this.cartitemlist);
   }
 }

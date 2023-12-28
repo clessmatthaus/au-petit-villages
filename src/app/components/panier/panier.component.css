@@ -1,5 +1,5 @@
 .card-container{
-    height: 70vh;
+    height: 72vh;
     background-color: white;
     padding: 50px 150px;
 }
@@ -37,6 +37,7 @@
 .card-table{
     position:relative;
     display: flex;
+    height: 72vh;
     flex-direction: column;
     word-wrap: break-word;
     min-width: none;

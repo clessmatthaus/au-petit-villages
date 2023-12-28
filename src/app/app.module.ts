@@ -22,6 +22,8 @@ import { FilterPipe } from './filter.pipe';
 import { SortPipe } from './sort.pipe';
 import { OrderModule } from 'ngx-order-pipe';
 import { ProductlistComponent } from './components/productlist/productlist.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+
 
 
 
@@ -44,6 +46,7 @@ import { ProductlistComponent } from './components/productlist/productlist.compo
     SortPipe,
     PanierComponent,
     ProductlistComponent,
+    PagenotfoundComponent,
     
     
   ],

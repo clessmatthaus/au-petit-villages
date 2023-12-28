@@ -35,9 +35,9 @@ export class ProductService {
         tap((response)=> console.log(response)),
     );
   }*/
-  addProduct(product: Product){
+  /*addProduct(product: Product){
   this.products.push(product);
-  }
+  }*/
   editProduct(_id: string, product: Product){
 
   }

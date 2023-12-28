@@ -123,21 +123,21 @@
      "slug": "ordralfabétix"
    },
    {
-    "id":9,
+    "id":10,
     "name": "tragicomix",
      "description": "Depuis sa toute première apparition dans Astérix le Gaulois, sous les yeux ébahis d’un «Caligulaminix» qui le découvre forgeant à main nue, Cétautomatix a beaucoup changé d’aspect, abandonnant les traits d’un gaulois blond et rondouillard pour ceux plus altiers qu’il arbore fièrement sous son légendaire tablier de cuir. Plus que tout autre, il symbolise ainsi le souci de perfection d’Albert Uderzo, qui n’a de cesse d’améliorer les graphismes de ses personnages..",
      "imageUrl":[
        "./assets/images/products/tragicomix.png",
-       "./assets/images/products/tragicomix1.png",
-       "./assets/images/products/tragicomix2.png",
-       "./assets/images/products/tragicomix3.png"
+       "./assets/images/products/tragicomixs3.jpg",
+       "./assets/images/products/tragicomix2.png", 
+       "./assets/images/products/tragicomix4.png"
      ],
      "sold_price": 5599,
      "regular_price": 6550,
      "slug": "tragicomix"
    },
    {
-    "id":9,
+    "id":11,
     "name": "cetautomatix",
      "description": "Assurancetourix est le barde du village d'Astérix et Obélix dans la bande dessinée d'Astérix.",
      "imageUrl":[
