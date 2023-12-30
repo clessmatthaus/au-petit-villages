@@ -1,0 +1,42 @@
+<app-slider></app-slider>
+    <div class="bio">
+      <div class="bio-back">
+      <img src="/assets/images/products/villages.png" alt="logo">
+      <p>La société <b>“Au petit village”</b> est une entreprise qui confectionne des figurines inspirées de la bande
+        dessinée Astérix et Obélix. Elle cible une population jeune entre 30 et 55 ans, nostalgique des aventures des célèbres
+        Gaulois. </p>
+      </div>
+    </div>
+<app-search></app-search>
+  <div class="search-form">  
+    <span>Trier par</span>
+    <button class="search-btn moins" (click)="sort('asc')">Prix croissant</button>
+    <button class="search-btn plus"  (click)="sort('dsc')">Prix décroissant</button>
+  </div>
+<div class="product-list">  
+  <div class="product-item" *ngFor="let item of articles">
+    <div class="p-card">
+        <div class="product-image">
+             <img
+             [src]= "item.imageUrl"
+             [alt]="item.name" height="300px" width="305px">
+           </div>   
+           <div class="product-details">
+             <div class="product-name">
+               <h3>{{item.name}}</h3>
+               <p>{{item.description}}</p>
+             </div>
+             <div class="product-price">
+               <h4>{{(item.sold_price || 0 )/100 |currency: "EUR"}}</h4>
+               <del>
+                 <h4>{{(item.regular_price || 0 )/100 |currency: "EUR"}}</h4>
+               </del>             
+             </div>
+             <div class="infos-details">
+               <button id="apercu" class="btn btn-secondary mx-2">Aperçu</button>   
+               <button id="apercu" class="btn btn-secondary mx-2">Details</button> 
+             </div>
+        </div> 
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="section">
+    <div class="input-group w-25 mt-5">
+        <input class="form-control" type="text" [(ngModel)]="searchInput">
+        <button class="btn btn-primary" (click)="filterProducts()">Rechercher</button>
+    </div>
+    <div class="input-group-append mx-2">
+        <select class="form-select">
+          <option>Trier par</option>
+          <option value="asc">Prix croissant</option>
+          <option value="dsc">Prix décroissant</option>
+        </select>
+    </div>  
+<div class="product-list">   
+    <ng-container  *ngFor="let p of filteredProducts" >      
+        <app-card [product]="p"></app-card>
+    </ng-container>
+    
+</div>
+
+<div>
+<div *ngIf="filteredProducts.length==0">
+
+</div>
+</div>

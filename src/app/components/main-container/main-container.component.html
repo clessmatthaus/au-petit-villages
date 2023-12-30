@@ -9,14 +9,18 @@
     <div class="search-product">
       <div class="search-name">
       <div class="search">
-        <input type="text" value="" placeholder="Rechercher un produit" [(ngModel)]="searchTerm" (keyup)="search($event)">
-        <img src="./assets/images/chercher.png" alt="">
+        <div class="input-group mt-15">
+          <input class="form-control" type="text" [(ngModel)]="searchTerm" (keyup)="search($event)">
+          <img src="./assets/images/chercher.png" alt=""> 
       </div>
-        <div class="tri">
-          <h3>Trier par </h3>
-          <button class="btn btn-secondary">Par prix croissant</button>
-          <button class="btn btn-secondary">Par prix décroissant</button>
-        </div>
+      </div>
+      <div class="input-group-append mx-2">
+        <select class="form-select">
+          <option>Trier par</option>
+          <option value="asc">Prix croissant</option>
+          <option value="dsc">Prix décroissant</option>
+        </select>
+      </div>
       </div>
     </div>
     <h2>Catalogue produits</h2>

@@ -5,6 +5,9 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { ProductComponent } from "./components/product/product.component";
 import { ProductlistComponent } from "./components/productlist/productlist.component";
 import { PanierComponent } from "./components/panier/panier.component";
+import { HomeComponent } from "./components/home/home.component";
+import { ProductlistsComponent } from "./components/productlists/productlists.component";
+import { CardComponent } from "./components/card/card.component";
 import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.component";
 
 
@@ -38,6 +41,27 @@ export const ROUTES: Routes = [
     {
       path: "productlist",
       component: ProductlistComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "home",
+      component: HomeComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "search/:searchItem",
+      component: HomeComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "productlists",
+      component: ProductlistsComponent,
+      pathMatch: 'full'
+    },
+    
+    {
+      path: "card",
+      component: CardComponent,
       pathMatch: 'full'
     },
     {

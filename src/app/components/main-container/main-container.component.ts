@@ -23,17 +23,4 @@ search(event:any){
   console.log(this.searchTerm);
   this.productService.search.next(this.searchTerm);
 }
-
-/*sort(order:any){
-  if(order=='asc'){
-    this.products.sort((p1, p2)=>{
-      return p1.sold_price > p2.sold_price ? 1 : -1;
-    })
-  }
-  else{
-    this.products.sort((p1, p2)=>{
-      return p1.sold_price > p2.sold_price ? -1 : 1;
-    })
-  }
-}*/
 }

@@ -23,6 +23,10 @@ import { SortPipe } from './sort.pipe';
 import { OrderModule } from 'ngx-order-pipe';
 import { ProductlistComponent } from './components/productlist/productlist.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductlistsComponent } from './components/productlists/productlists.component';
+import { CardComponent } from './components/card/card.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     SortPipe,
     PanierComponent,
     ProductlistComponent,
-    PagenotfoundComponent,  
+    PagenotfoundComponent,
+    HomeComponent,
+    ProductlistsComponent,
+    CardComponent,
+    SearchComponent,  
     
   ],
   imports: [
