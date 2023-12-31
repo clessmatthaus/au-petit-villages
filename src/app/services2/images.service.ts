@@ -8,8 +8,11 @@ import { Tag } from '../models/Tag';
 export class ImagesService {
 
   constructor() { }
-
-  //find article by tags
+  //finding article by id
+  getArticleById(id:number):Articles{
+    return this.getAll().find(article => article.id == id)!;
+  }
+  //finding article by tags
   getAllArticleByTag(tag:string):Articles[]{
       return tag=="Toutes"?
       this.getAll(): this.getAll().filter(article => article.tags?.includes(tag))

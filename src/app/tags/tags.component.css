@@ -18,6 +18,7 @@
 .tags a:hover{
     background-color:#FDD90B;
     color: white;
+    cursor: pointer;
 }
 @media (max-width: 480px){
     .tags a{

@@ -9,6 +9,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { ProductlistsComponent } from "./components/productlists/productlists.component";
 import { CardComponent } from "./components/card/card.component";
 import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.component";
+import { ArticlePageComponent } from "./components/article-page/article-page.component";
 
 
 
@@ -51,6 +52,11 @@ export const ROUTES: Routes = [
     {
       path: "tags/:tag",
       component: HomeComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "article/:id",
+      component: ArticlePageComponent,
       pathMatch: 'full'
     },
     {

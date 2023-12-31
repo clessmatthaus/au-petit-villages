@@ -28,6 +28,7 @@ import { ProductlistsComponent } from './components/productlists/productlists.co
 import { CardComponent } from './components/card/card.component';
 import { SearchComponent } from './components/search/search.component';
 import { TagsComponent } from './tags/tags.component';
+import { ArticlePageComponent } from './components/article-page/article-page.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TagsComponent } from './tags/tags.component';
     ProductlistsComponent,
     CardComponent,
     SearchComponent,
-    TagsComponent,  
+    TagsComponent,
+    ArticlePageComponent,  
     
   ],
   imports: [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Tag } from '../models/Tag';
 import { ImagesService } from '../services2/images.service';
 
@@ -8,10 +8,13 @@ import { ImagesService } from '../services2/images.service';
   styleUrls: ['./tags.component.css']
 })
 export class TagsComponent implements OnInit {
-  tags:Tag[] = [];
+  @Input()
+  articlePageTags?:string[];
+  tags?:Tag[] = [];
   constructor(private ps: ImagesService) { }
 
   ngOnInit(): void {
+    if(!this.articlePageTags)
     this.tags = this.ps.getAllTag();
   }
 

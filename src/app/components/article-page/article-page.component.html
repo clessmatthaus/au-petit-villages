@@ -1,0 +1,49 @@
+<div class="product-container">
+    <div class="title-product">
+      <h2>{{article.name}}</h2>
+    </div>
+    <div class="infos-container">
+      <div class="img-container">
+        <img [src]="article.imageUrl" [alt]="article.name">
+      </div>
+      <div class="infos-product">
+      <h4>Description</h4>
+      <p class="p-desc">{{article.description}}</p>
+      <div class="caract">
+        <h5>Caracteristiques generales</h5>
+        <div class="critere">
+          <div class="critere-items"><p>Type :</p><p>Figurine</p></div>
+          <div class="critere-items"><p>Couleur :</p><p>Multicouleurs</p></div>
+          <div class="critere-items"><p>Age :</p><p>entre 30 et 55 ans</p></div>
+          <div class="critere-items"><p>Fabriqué en :</p><p>France</p></div>
+        </div>
+      </div>
+        <div class="product-price">
+          <h3>{{(article.sold_price || 0 )/100 |currency: "EUR"}}</h3>
+          <del>
+            <h3>{{(article.regular_price || 0 )/100 |currency: "EUR"}}</h3>
+          </del>
+        </div>
+        <div class="panier">
+           
+          <div class="btn-panier">   
+            <img src="./assets/images/chariot.png" alt="" width="25px">
+            <span> Acheter</span>        
+          </div>      
+        </div>
+        <div class="livraison">
+          <div>
+            <img src="./assets/images/livraisons.png" width="55px" alt="">
+          </div>
+          <div>
+            <p><b>Livraison dés 2/3 jours</b></p>
+            <span>A partir de <b>4.99 $</b></span>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="tag">
+        <app-tags [articlePageTags]="article.tags"></app-tags>
+    </div>
+  </div>
+  

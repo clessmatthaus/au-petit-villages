@@ -16,6 +16,7 @@
 <app-tags></app-tags>
 <div class="product-list">  
   <div class="product-item" *ngFor="let item of articles">
+    <a routerLink="/article/{{item.id}}">
     <div class="p-card">
         <div class="product-image">
              <img
@@ -39,5 +40,6 @@
              </div>
         </div> 
     </div>
+  </a>
   </div>
 </div>
