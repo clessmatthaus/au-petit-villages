@@ -41,11 +41,6 @@ header{
     margin-right: 50px;
     padding: 10px;
   }
-  .panier-icon:hover{
-    border: 0.5px solid #FDD90B ;
-    background-color: #FDD90B;
-    border-radius: 100%;
-  }
   .panier-icon p{
     font-size: 14px;
     font-weight: bold;

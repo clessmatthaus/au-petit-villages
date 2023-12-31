@@ -14,16 +14,18 @@
     <button class="search-btn plus"  (click)="sort('dsc')">Prix décroissant</button>
   </div>
 <app-tags></app-tags>
+
 <div class="product-list">  
-  <div class="product-item" *ngFor="let item of articles">
-    <a routerLink="/article/{{item.id}}">
+  <div class="product-item" *ngFor="let item of articles">   
     <div class="p-card">
+      
         <div class="product-image">
-             <img
+            <img
              [src]= "item.imageUrl"
              [alt]="item.name" height="300px" width="305px">
-           </div>   
-           <div class="product-details">
+        </div> 
+       
+          <div class="product-details">
              <div class="product-name">
                <h3>{{item.name}}</h3>
                <p>{{item.description}}</p>
@@ -34,12 +36,12 @@
                  <h4>{{(item.regular_price || 0 )/100 |currency: "EUR"}}</h4>
                </del>             
              </div>
-             <div class="infos-details">
-               <button id="apercu" class="btn btn-secondary mx-2">Aperçu</button>   
-               <button id="apercu" class="btn btn-secondary mx-2">Details</button> 
-             </div>
-        </div> 
+             <div class="infos-details">  
+              <a routerLink="/article/{{item.id}}">
+               <button id="apercu" class="btn btn-secondary mx-2">Voir details</button> 
+              </a>
+              </div>
+          </div> 
     </div>
-  </a>
   </div>
 </div>

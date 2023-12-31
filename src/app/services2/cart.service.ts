@@ -22,7 +22,7 @@ removeFromCart(articleId:number):void{
 changeQuantity(quantity:number, articleId:number){
   let cartArticle = this.cart.items.find(item=> item.article.id === articleId);
   if(!cartArticle) return;
-  cartArticle.quantity = quantity;
+   cartArticle.quantity = quantity;
 }
 getCart():cart{
   return this.cart;

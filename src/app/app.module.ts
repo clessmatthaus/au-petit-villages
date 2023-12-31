@@ -29,6 +29,8 @@ import { CardComponent } from './components/card/card.component';
 import { SearchComponent } from './components/search/search.component';
 import { TagsComponent } from './tags/tags.component';
 import { ArticlePageComponent } from './components/article-page/article-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { PanierVideComponent } from './components/panier-vide/panier-vide.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ArticlePageComponent } from './components/article-page/article-page.com
     CardComponent,
     SearchComponent,
     TagsComponent,
-    ArticlePageComponent,  
+    ArticlePageComponent,
+    CartPageComponent,
+    PanierVideComponent,  
     
   ],
   imports: [

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { navItems } from 'src/app/api/nav';
 import { Item } from 'src/app/models/item';
-import { CartService } from 'src/app/service/cart.service';
+import { CartService } from 'src/app/services2/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -16,9 +16,9 @@ export class HeaderComponent implements OnInit {
   constructor(private cart: CartService) { }
 
   ngOnInit(): void {
-  this.cart.getproduct().subscribe(res=>{
-    this.totalItem = res.length;
-  })
+  //this.cart.addToCart().subscribe(res=>{
+    //this.totalItem = res.length;
+  //})
   }
   handleDisplayMobileNav(){
     /*console.log(this.isDisplayMobileNav)*/

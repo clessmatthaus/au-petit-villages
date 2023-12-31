@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Articles } from 'src/app/models/article';
+import { CartService } from 'src/app/services2/cart.service';
 import { ImagesService } from 'src/app/services2/images.service';
 
 @Component({
@@ -10,7 +11,8 @@ import { ImagesService } from 'src/app/services2/images.service';
 })
 export class ArticlePageComponent implements OnInit {
 article!:Articles
-  constructor(private activatedRoute: ActivatedRoute, private articleService: ImagesService) {
+  constructor(private activatedRoute: ActivatedRoute, private articleService: ImagesService, 
+    private cartService: CartService, private router: Router) {
     activatedRoute.params.subscribe((params)=>{
       if(params['id'])
       this.article = articleService.getArticleById(params['id'])
@@ -19,5 +21,8 @@ article!:Articles
 
   ngOnInit(): void {
   }
-
+addToCart(){
+  this.cartService.addToCart(this.article);
+  this.router.navigateByUrl('/cart-page')
+}
 }

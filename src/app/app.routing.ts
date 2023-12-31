@@ -10,6 +10,8 @@ import { ProductlistsComponent } from "./components/productlists/productlists.co
 import { CardComponent } from "./components/card/card.component";
 import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.component";
 import { ArticlePageComponent } from "./components/article-page/article-page.component";
+import { CartPageComponent } from "./components/cart-page/cart-page.component";
+import { PanierVideComponent } from "./components/panier-vide/panier-vide.component";
 
 
 
@@ -60,8 +62,13 @@ export const ROUTES: Routes = [
       pathMatch: 'full'
     },
     {
-      path: "productlists",
-      component: ProductlistsComponent,
+      path: "cart-page",
+      component: CartPageComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "panier-vide",
+      component: PanierVideComponent,
       pathMatch: 'full'
     },
     

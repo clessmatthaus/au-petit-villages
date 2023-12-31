@@ -1,0 +1,51 @@
+<app-panier-vide [visible]="!cart || cart.items.length <=0">
+    
+</app-panier-vide>
+<div *ngIf="cart && cart.items.length >0" class="cart-container" >
+    <div class="cart-title"><h2>Mon panier</h2></div>
+    <div class="cart-sub">
+    <ul>
+        <li>
+            <div><p>Image article</p></div>
+            <div><p>Designation </p></div>
+            <div><p>Quantité</p></div>
+            <div><p>Prix</p></div>
+            <div><p>Action</p></div>
+        </li>
+        <li *ngFor="let cartItem of cart.items">
+            <div class="cart-img">
+                <img [src]="cartItem.article.imageUrl" [alt]="cartItem.article.name" width="200px">
+            </div>
+            <div>
+                <a routerLink="/article/{{cartItem.article.id}}">
+                    {{cartItem.article.name}}
+                </a>
+            </div>
+            <div>
+                <select #quantitySelect (change)="changeQuantity(cartItem, quantitySelect.value)">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="prix">
+                {{(cartItem.price || 0 )/100 |currency: "EUR"}}
+            </div>
+            <div>
+                <button class="remove-button btn btn-danger" (click)="removeFromCart(cartItem)">Supprimer</button>
+            </div>
+        </li>
+    </ul>
+    <div class="checkout">
+        <div class="article-count">
+            {{cart.items.length}}
+        </div>
+        <div class="total-price">
+            {{(cart.totalPrice || 0)/100 |currency: "EUR"}}
+        </div>
+        <a routerLink="/checkout">Valider le panier</a>
+    </div>
+</div>
+</div>

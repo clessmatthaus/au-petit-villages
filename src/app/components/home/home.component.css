@@ -16,7 +16,7 @@
   font-family: 'Comfortaa', sans-serif;
 }
 .bio-back{
-  background-color: #151217;
+  background-color: black;
   margin: 0px 0;
   opacity: 0.9;
   height: 270px;
@@ -46,10 +46,10 @@
   border: none;
 }
 .moins{
-  background-color: #313131;
+  background-color: black;
 }
 .plus{
-  background-color: #313131;
+  background-color: black;
 }
 .search-btn:hover{
   opacity: 1;

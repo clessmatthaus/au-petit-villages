@@ -3,7 +3,7 @@ import { Item } from "../models/item";
 export const navItems: Item[] = [
     {
         name: "Home",
-        path: "home"
+        path: ""
     },
     {
         name: "About",
