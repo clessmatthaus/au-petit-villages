@@ -19,12 +19,15 @@ export class HomeComponent implements OnInit {
   this.route.params.subscribe(params =>{
     if(params['searchItem'])
     this.articles = this.ps.getAll().filter(article=> article.name.toLowerCase().includes(params['searchItem'].toLowerCase()) )
+    else if(params['tag'])
+    this.articles = this.ps.getAllArticleByTag(params['tag']); 
     else
-    this.articles = this.ps.getAll(); 
+    this.articles = this.ps.getAll()
   })
   }
+  
+  //Sorting articles by price
   sort(order:any){
-
     if(order == 'asc'){
       this.articles.sort(
         (p1, p2)=> {return p1.sold_price > p2.sold_price ? 1 : -1})

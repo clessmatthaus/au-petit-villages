@@ -2,7 +2,7 @@
     <div class="bio">
       <div class="bio-back">
       <img src="/assets/images/products/villages.png" alt="logo">
-      <p>La société <b>“Au petit village”</b> est une entreprise qui confectionne des figurines inspirées de la bande
+      <p><b>AU PETIT VILLAGE</b> est une entreprise qui confectionne des figurines inspirées de la bande
         dessinée Astérix et Obélix. Elle cible une population jeune entre 30 et 55 ans, nostalgique des aventures des célèbres
         Gaulois. </p>
       </div>
@@ -13,6 +13,7 @@
     <button class="search-btn moins" (click)="sort('asc')">Prix croissant</button>
     <button class="search-btn plus"  (click)="sort('dsc')">Prix décroissant</button>
   </div>
+<app-tags></app-tags>
 <div class="product-list">  
   <div class="product-item" *ngFor="let item of articles">
     <div class="p-card">

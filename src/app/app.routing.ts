@@ -13,11 +13,6 @@ import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.co
 
 
 export const ROUTES: Routes = [
-  {
-      path: "",
-      component: MainContainerComponent,
-      pathMatch: 'full'
-    },
     {
       path: "apropos",
       component: AproposComponent,
@@ -44,12 +39,17 @@ export const ROUTES: Routes = [
       pathMatch: 'full'
     },
     {
-      path: "home",
+      path: "",
       component: HomeComponent,
       pathMatch: 'full'
     },
     {
       path: "search/:searchItem",
+      component: HomeComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "tags/:tag",
       component: HomeComponent,
       pathMatch: 'full'
     },

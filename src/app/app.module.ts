@@ -27,6 +27,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductlistsComponent } from './components/productlists/productlists.component';
 import { CardComponent } from './components/card/card.component';
 import { SearchComponent } from './components/search/search.component';
+import { TagsComponent } from './tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { SearchComponent } from './components/search/search.component';
     HomeComponent,
     ProductlistsComponent,
     CardComponent,
-    SearchComponent,  
+    SearchComponent,
+    TagsComponent,  
     
   ],
   imports: [

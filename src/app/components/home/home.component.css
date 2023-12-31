@@ -16,14 +16,15 @@
   font-family: 'Comfortaa', sans-serif;
 }
 .bio-back{
-  background-color: rgb(10, 10, 10);
+  background-color: #151217;
   margin: 0px 0;
   opacity: 0.9;
   height: 270px;
 }
 .bio p{
   margin-top: 20px;
-  font-weight: bold;
+  font-weight:400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0 10px;
   font-size: 17px;
 }
@@ -34,21 +35,21 @@
 .search-form{
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 20px; 
 }
 .search-btn{
-  padding:0 5px;
+  padding:2px 10px;
   border-radius: 5px;
   color: white;
   opacity: .8;
   border: none;
 }
 .moins{
-  background-color: black;
+  background-color: #313131;
 }
 .plus{
-  background-color: #DA001E;
+  background-color: #313131;
 }
 .search-btn:hover{
   opacity: 1;
@@ -81,9 +82,6 @@
     cursor: pointer;
     box-shadow: 0 3px 5px -1px rgb(187, 185, 185),  0 6px 10px rgb(201, 200, 200), 0 1px 13px rgb(197, 197, 197);
     background:whitesmoke;
-  }
-  .card{
-   
   }
   .card:hover{
     background-color: gray;
@@ -118,6 +116,8 @@
     display: flex;
     padding: 10px 20px;
     justify-content: center;
+    align-items: center;
+    bottom: 0;
   }
   .infos-details button{
     padding: 7px 40px;

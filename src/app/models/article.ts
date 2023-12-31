@@ -8,5 +8,6 @@ export class Articles{
     star:number=0;
     imageUrl!:string;
     origins!:string[];
+    tags?:string[];
 
 }
