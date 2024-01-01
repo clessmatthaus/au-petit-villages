@@ -9,9 +9,9 @@ import { cartItem } from '../models/cartItem';
 export class CartService {
 private cart: cart = new cart();
 addToCart(article:Articles):void{
-let cartArticle = this.cart.items.find(item => item.article.id == article.id)
+let cartArticle = this.cart.items.find(item => item.article.id ==+ article.id)
 if(cartArticle){
-  this.changeQuantity(article.id, cartArticle.quantity+1)
+  this.changeQuantity(article.id , cartArticle.quantity +1)
   return;
 }
 this.cart.items.push(new cartItem(article));

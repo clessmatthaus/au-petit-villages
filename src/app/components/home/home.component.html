@@ -14,7 +14,7 @@
     <button class="search-btn plus"  (click)="sort('dsc')">Prix décroissant</button>
   </div>
 <app-tags></app-tags>
-
+<app-not-article [visible]="!articles || articles.length <=0" resetLinkText="Réinitialiser la recherche"></app-not-article>
 <div class="product-list">  
   <div class="product-item" *ngFor="let item of articles">   
     <div class="p-card">

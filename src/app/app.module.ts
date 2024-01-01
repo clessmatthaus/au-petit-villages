@@ -31,6 +31,7 @@ import { TagsComponent } from './tags/tags.component';
 import { ArticlePageComponent } from './components/article-page/article-page.component';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { PanierVideComponent } from './components/panier-vide/panier-vide.component';
+import { NotArticleComponent } from './components/not-article/not-article.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { PanierVideComponent } from './components/panier-vide/panier-vide.compon
     TagsComponent,
     ArticlePageComponent,
     CartPageComponent,
-    PanierVideComponent,  
+    PanierVideComponent,
+    NotArticleComponent,  
     
   ],
   imports: [

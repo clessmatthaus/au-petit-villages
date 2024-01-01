@@ -1,10 +1,10 @@
 .product-item {
     text-align: center;
-    border: 0.5px solid rgb(207, 207, 207);
+    border: 0.5px solid white;
     width: 310px;
     cursor: pointer;
-    box-shadow: 0 3px 5px -1px rgb(187, 185, 185),  0 6px 10px rgb(201, 200, 200), 0 1px 13px rgb(197, 197, 197);
-    background:whitesmoke;
+    box-shadow: 0 3px 5px -1px white,  0 6px 10px white, 0 1px 13px white;
+    background:white;
   }
   .card:hover{
     background-color: gray;

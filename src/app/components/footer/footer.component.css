@@ -1,11 +1,11 @@
 .footer{
     padding: 10px 0;
-    background-color:  #DA001E;
+    background-color:  #f0c44d;
     position: sticky;
   }
   .footer-content{
     height: calc(100% - 75vh - 120px);
-    background-color:  #DA001E;
+    background-color:  #f0c44d;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
     width: 100%;
     font-size: 18px;
     font-weight: bold;
-    color: white;
+    color: black;
     cursor: pointer;
     margin-bottom: 10px;
     margin-top: 10px;

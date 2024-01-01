@@ -5,12 +5,12 @@
     
 }
 .search-input{
-    padding-Right: 150px;
+    padding-Right: 200px;
     padding-top:10px;
     padding-left:10px;
     padding-bottom:10px;  
-    border: 1px solid whitesmoke;
-    border-radius: 10px 0 0 10px;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 15px 0 0 15px;
     border: none;
     background-color: whitesmoke;
     outline: none;
@@ -18,10 +18,10 @@
 }
 .search-btn{
     padding:5px;
-    border-radius:  0 10px 10px 0;
+    border-radius:  0 15px 15px 0;
     background-color: black;
     color: white;
-    opacity: .8;
+    font-size:14px;
 }
 .search-btn:hover{
     opacity: 1;

@@ -1,0 +1,15 @@
+.btn-scroll{
+    position:fixed;
+    bottom: 10px;
+    border-radius: 50%;
+    right: 15px;
+}
+.btn-scroll:hover{ 
+    color: rgb(48, 2, 2);
+}
+@media (max-width: 480px){
+    .btn-scroll svg{
+        width: 30px;
+        height: 30px;
+    }
+}

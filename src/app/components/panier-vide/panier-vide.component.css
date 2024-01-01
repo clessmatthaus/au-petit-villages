@@ -1,10 +1,10 @@
 .card-container{
     height: 72vh;
-    background-color: white;
-    padding: 50px 150px;
+    background-color: transparent;
+    padding: 100px 0;
 }
 .card{
-    height: 100%;
+    margin-top:30px;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -94,7 +94,10 @@ font-size: 11px;
     .font-s{
         font-size: 7px;
         padding: 0 5px;
-        }
+    }
+    .card-paniers h5{
+        font-size: 15px;
+    }
 }
 @media (max-width: 555px){
     .card-container{
@@ -125,13 +128,27 @@ font-size: 11px;
     .font-s{
         font-size: 5px;
         padding: 0 1px;
-        }
+    }
+    .card-paniers h5{
+        font-size: 13px;
+    }
+    .btn-panier{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
 }
 @media (max-width: 463px)
 {
     .card-container{
         padding: 80px 10px;
         
+    }
+    .btn-panier{
+        padding: 10px 40px;
+        font-size: 13px;
+    }
+    .card-paniers h5{
+        font-size: 12px;
     }
     .card{
         padding: 20px 10px;
@@ -141,6 +158,10 @@ font-size: 11px;
     .card-container{
         padding: 80px 7px;
         
+    }
+    .btn-panier{
+        padding: 8px 35px;
+        font-size: 12px;
     }
     .font-s{
         font-size: 4px;

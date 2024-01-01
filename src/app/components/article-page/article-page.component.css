@@ -234,6 +234,15 @@
         width: 100%;
     
       }
+      .infos-product .p-desc{
+        font-size: 13px;
+      }
+      .critere p{
+        font-size: 13px;
+      }
+      .livraison{
+        font-size: 13px;
+      }
     }
     @media (max-width: 370px){
       .title-product h2{

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'au-petit-ville';
+
+  isMenuScrolled = false;
+
+  @HostListener('window:scroll', ['$event'])
+  scrollCheck(){
+    if(window.pageYOffset > 100)
+    this.isMenuScrolled = true
+    else
+    this.isMenuScrolled = false
+  }
+  scrollToTop(){
+    document.body.scrollIntoView({behavior: 'smooth'})
+  }
 }

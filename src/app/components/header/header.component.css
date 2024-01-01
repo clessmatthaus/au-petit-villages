@@ -1,5 +1,5 @@
 header{
-    background-color: whitesmoke;
+    background-color: #f0c44d;
     height: 120px;
     color: #151217;
     font-weight: bold;
@@ -13,7 +13,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 5;
-    box-shadow: 0 3px 3px -1px white,  0 3px rgb(209, 207, 207), 0 1px 3px white;
+    box-shadow: 0 3px 3px -1px #f0c44d,  0 3px rgb(70, 69, 69), 0 1px 3px #f0c44d;
   }
   header .nav-bar ul{
     display: flex;
@@ -42,10 +42,11 @@ header{
     padding: 10px;
   }
   .panier-icon p{
-    font-size: 14px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
-    margin-top: -30px;
+    border-radius: 100%;
+    margin-top: -27px;
   }
   .logo img{
     width: 170px;

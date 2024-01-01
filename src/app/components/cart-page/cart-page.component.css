@@ -7,7 +7,6 @@
     margin: 1.5rem;
 }
 .cart-title{
-   
     width: 100%;
     border: 1px solid whitesmoke;
     border-radius: 1rem  1rem   0  0;
@@ -86,6 +85,12 @@ margin-bottom: 20px;
     border: 1px solid rgb(197, 150, 21);
     background-color: rgb(197, 150, 21); 
     color: white;  
+}
+ul li select{
+    border: none;
+    outline: none;
+    width: 2rem;
+    border-bottom: 1px solid rgb(245, 221, 154);
 }
 @media (max-width: 680px){
     .cart-title h2{

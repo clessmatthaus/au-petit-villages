@@ -12,6 +12,7 @@ import { PagenotfoundComponent } from "./components/pagenotfound/pagenotfound.co
 import { ArticlePageComponent } from "./components/article-page/article-page.component";
 import { CartPageComponent } from "./components/cart-page/cart-page.component";
 import { PanierVideComponent } from "./components/panier-vide/panier-vide.component";
+import { NotArticleComponent } from "./components/not-article/not-article.component";
 
 
 
@@ -69,6 +70,11 @@ export const ROUTES: Routes = [
     {
       path: "panier-vide",
       component: PanierVideComponent,
+      pathMatch: 'full'
+    },
+    {
+      path: "not-found",
+      component: NotArticleComponent,
       pathMatch: 'full'
     },
     
