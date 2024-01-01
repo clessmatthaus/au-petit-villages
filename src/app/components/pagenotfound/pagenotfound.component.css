@@ -6,3 +6,34 @@
     background-position: center;
     background-image:url("/assets/images/not1.jpeg") ;
 }
+.text-center {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.text-center P{
+    padding: 10px;
+    border: 1px solid #FDD90B;
+    background-color: #FDD90B;
+    z-index: 5;
+    position: fixed;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+@media (max-width: 480px){
+    .text-center P{
+        font-size: 12px;
+
+    }  
+}
+@media (max-width: 380px){
+    .text-center P{
+        font-size: 10px;
+
+    }  
+}

@@ -18,6 +18,7 @@ export class CartPageComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    window.scrollTo(0,0)
   }
 setCart(){
   this.cart = this.cartService.getCart();

@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private ps:ImagesService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+  window.scrollTo(0,0)
   
   this.route.params.subscribe(params =>{
     if(params['searchItem'])

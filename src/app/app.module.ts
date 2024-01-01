@@ -32,6 +32,8 @@ import { ArticlePageComponent } from './components/article-page/article-page.com
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { PanierVideComponent } from './components/panier-vide/panier-vide.component';
 import { NotArticleComponent } from './components/not-article/not-article.component';
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
 
 @NgModule({
   declarations: [
@@ -60,8 +62,9 @@ import { NotArticleComponent } from './components/not-article/not-article.compon
     ArticlePageComponent,
     CartPageComponent,
     PanierVideComponent,
-    NotArticleComponent,  
-    
+    NotArticleComponent,
+    NextDirective,
+    PrevDirective,  
   ],
   imports: [
     BrowserModule,

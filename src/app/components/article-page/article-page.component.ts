@@ -19,8 +19,9 @@ article!:Articles
     })
    }
 
-  ngOnInit(): void {
-  }
+ngOnInit(): void {
+    window.scrollTo(0,0)
+}
 addToCart(){
   this.cartService.addToCart(this.article);
   this.router.navigateByUrl('/cart-page')
