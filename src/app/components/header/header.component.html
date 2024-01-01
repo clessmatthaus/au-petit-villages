@@ -9,7 +9,8 @@
   </div>
     <div class="nav-bar">
       <ul>
-        <li *ngFor="let item of navData"><a [routerLink]="item?.path">{{item?.name}}</a></li>
+        <li [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}"><a routerLink="">HOME</a></li>
+        <li [routerLinkActive]="'active'"><a [routerLink]="'apropos'">ABOUT</a></li>
       </ul>
     </div>
     <a routerLink="cart-page">

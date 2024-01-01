@@ -12,3 +12,9 @@
   a{
     text-decoration: none;
   }
+  .active{
+    background-color: whitesmoke;
+    padding: 5px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+  }

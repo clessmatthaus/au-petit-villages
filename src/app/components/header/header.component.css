@@ -35,7 +35,7 @@ header{
   header a:hover {
     font-weight: bold;
     text-decoration: none;
-    color: #DA001E;
+    color: gray;
   }
   .panier-icon{
     margin-right: 50px;
