@@ -1,10 +1,11 @@
 .about-contenair{
     height: 100%;
+    padding-bottom: 80px;
 }
 .about{
     width:100%;
     height:100%;
-    background-color:black; 
+    background-color:black;
     background-image: url("/assets/images/products/blur2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,14 +19,14 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
     z-index: 5;
 }
 .about-infos{
     height: 50%;
     padding:20px 10px;
     padding-left: 50px;
-    
+
 }
 .about-infos h1{
     margin: 20px 0;
@@ -40,7 +41,7 @@
     border: 1px solid white;
     border-radius: 5px;
     background-color: #DA001E;
-    border: 0.3px solid #DA001E; 
+    border: 0.3px solid #DA001E;
 }
 .trait span:hover{
     opacity: 0.5;
@@ -48,19 +49,19 @@
 }
 
 .model-img{
-    height: 50%;  
+    height: 50%;
     justify-content:center;
-    align-items: center; 
+    align-items: center;
     padding:20px 10px;
     margin-top: 30px;
-    
+
 }
 .model-img img{
-    width: 500px;  
+    width: 500px;
     border:1px solid white;
     box-shadow: 0 5px 5px 5px whitesmoke;
     animation: animate 5s ease-in-out infinite;
-    transition: all 1s ease-in-out; 
+    transition: all 1s ease-in-out;
     background-color: #DA001E;
 }
 @keyframes animate {
@@ -90,8 +91,9 @@
 }
 
 .figurines{
-    padding: 50px 0px;  
-    height: 55vh; 
+    padding: 50px 0px;
+    height: 75vh;
+    margin-bottom: 10px;
 }
 .slider-wrap{
     position: relative;
@@ -115,7 +117,7 @@
     box-shadow: 0 3px 5px -1px gray,  0 6px 10px white, 0 1px 13px whitesmoke;
 }
 .text{
-    position: absolute;  
+    position: absolute;
 }
 .prev{
     position: absolute;
@@ -126,7 +128,7 @@
     background-color: black;
     border: 1px solid white;
     color: white;
-    z-index: 5;
+
 }
 .prev:hover{
     background-color:white ;
@@ -142,7 +144,7 @@
     background-color: black;
     border: 1px solid white;
     color: white;
-    z-index: 5;
+
 }
 .next:hover{
     background-color:white ;
@@ -156,7 +158,7 @@
     background-color: #151217;
 }
 .back3{
-    background-color: #F9D0A3; 
+    background-color: #F9D0A3;
 }
 .contact-tog{
     width: 100%;
@@ -166,6 +168,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .form-tog{
     padding: 20px 40px;
@@ -174,6 +177,7 @@
     background-color: rgb(105, 104, 104);
     font-weight: bold;
     color: white;
+    font-size:13px;
     margin-bottom: 40px;
 }
 .tog-img{
@@ -194,7 +198,7 @@
         font-size: 19px;
     }
     .model-img img{
-        width: 300px;   
+        width: 300px;
     }
 }
 @media (max-width: 762px){
@@ -205,7 +209,7 @@
         font-size: 12px;
     }
     .model-img img{
-        width: 300px;   
+        width: 300px;
     }
     .trait span{
         padding: 10px 30px;
@@ -220,7 +224,7 @@
         font-size: 10px;
     }
     .model-img img{
-        width: 250px;   
+        width: 250px;
     }
     .trait span{
         padding: 10px 20px;
@@ -233,7 +237,7 @@
         padding:30px 10px;
         display: flex;
         color:white;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: start;
         align-items: start;
         gap: 0px;
@@ -241,24 +245,23 @@
     .about-infos{
         height: 100%;
         padding:20px 0px;
-        padding-left: 40px; 
+        padding-left: 10px;
     }
     .model-img{
-        height: 100%;  
+        height: 100%;
         justify-content:center;
-        align-items: center; 
+        align-items: center;
         padding:0px 10px;
         margin-top: 0px;
-        visibility: hidden;
+        margin-top: 80px;
     }
     .model-img img{
-        width: 250px;
-        visibility: hidden;   
+        width: 180px;    
     }
     .about{
         width:100%;
         height:50vh;
-        background-color:black; 
+        background-color:black;
     }
     .item{
         display: inline-block;
@@ -269,14 +272,59 @@
         padding: 10px;
         margin: 0 12px;
     }
+    .back1{
+        background-color: #FDD90B ;
+    }
+    .back2{
+        background-color: #151217;
+    }
+    .back3{
+        background-color: #F9D0A3;
+    }
     .slider-wrap{
         position: relative;
         overflow: hidden;
         height: 230px;
         margin-top: 30px;
     }
+    .contact-tog{
+      width: 100%;
+      margin-top: 50px;
+      padding: 50px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+  }
+  .form-tog{
+      padding: 10px 20px;
+      border: 1px solid gray;
+      border-radius:  90px 100px 0px 90px ;
+      background-color: rgb(105, 104, 104);
+      font-weight: bold;
+      color: white;
+      font-size:11px;
+      margin-bottom: 30px;
+  }
 }
 @media (max-width: 480px){
+    .about-div{
+        width:100%;
+        padding:30px 5px;
+        display: flex;
+        color:white;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        z-index: 5;
+    }
+    .about-infos{
+        height: 100%;
+        padding:20px 0px;
+        padding-left: 10px;
+    }
     .item{
         display: inline-block;
         width: 170px;
@@ -286,12 +334,21 @@
         padding: 10px;
         margin: 0 12px;
     }
+    .back1{
+        background-color: #FDD90B ;
+    }
+    .back2{
+        background-color: #151217;
+    }
+    .back3{
+        background-color: #F9D0A3;
+    }
     .slider-wrap{
         position: relative;
         overflow: hidden;
         height: 160px;
         margin-top: 30px;
-    } 
+    }
     .item img{
         width:160px;
         height: 150px;
@@ -305,21 +362,51 @@
         height: 2px;
         width: 110px;
     }
+    .form-tog{
+      padding: 5px 10px;
+      border: 1px solid gray;
+      border-radius:  90px 100px 0px 90px ;
+      background-color: rgb(105, 104, 104);
+      font-weight: bold;
+      color: white;
+      font-size:10px;
+      margin-bottom: 5px;
+  }
+  .model-img{
+    height: 100%;
+    justify-content:center;
+    align-items: center;
+    padding:0px 10px;
+    margin-top: 0px;
+    margin-top: 100px;
+}
+.model-img img{
+    width: 120px;    
+}
+.trait span{
+    padding: 6px 10px;
+   font-size: 8px;
+}
 }
 @media (max-width: 480px){
     .about-infos h1{
         font-size: 12px;
     }
     .about-infos p{
-        margin: 40px 0;
+        margin: 30px 0;
+        font-size: 10px;
     }
 }
 @media (max-width: 350px){
     .about-infos h1{
-        font-size: 12px;
+        font-size: 11px;
     }
     .about-infos p{
-        margin: 40px 0;
+        margin: 30px 0;
+        font-size: 9px;
+    }
+    .model-img img{
+        width: 100px;    
     }
     .item{
         display: inline-block;
@@ -330,12 +417,21 @@
         padding: 10px;
         margin: 0 12px;
     }
+    .back1{
+        background-color: #FDD90B ;
+    }
+    .back2{
+        background-color: #151217;
+    }
+    .back3{
+        background-color: #F9D0A3;
+    }
     .slider-wrap{
         position: relative;
         overflow: hidden;
         height: 120px;
         margin-top: 30px;
-    } 
+    }
     .item img{
         width:130px;
         height: 110px;
@@ -343,14 +439,14 @@
     .about-infos{
         height: 100%;
         padding:20px 0px;
-        padding-left: 10px; 
+        padding-left: 10px;
     }
     .about-infos p{
         font-size: 10px;
     }
     .figurines{
-        padding: 40px 0px;  
-        height: 30vh; 
+        padding: 40px 0px;
+
     }
-    
+
 }

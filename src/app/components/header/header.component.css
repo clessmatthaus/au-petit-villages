@@ -73,11 +73,6 @@ header{
       margin-left: 50px;
       cursor:pointer;
     }
-    .none img:hover{
-      background-color: #DA001E;
-      padding: 10px;
-      border-radius: 5px;
-    }
     
   }
   @media (max-width: 445px){
